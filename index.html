@@ -1,0 +1,2394 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITDS - Strategisch Overzicht Nederlandse Verzekeraars 2026-2028</title>
+    <style>
+/* Tailwind CSS Reset & Utilities - Volledig Lokaal */
+*, ::before, ::after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
+::before, ::after { --tw-content: ''; }
+html { line-height: 1.5; -webkit-text-size-adjust: 100%; tab-size: 4; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+body { margin: 0; line-height: inherit; }
+h1, h2, h3, h4, h5, h6, p, ul, ol { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+a { color: inherit; text-decoration: inherit; }
+b, strong { font-weight: bolder; }
+button, input, select, textarea { font-family: inherit; font-size: 100%; line-height: inherit; color: inherit; margin: 0; padding: 0; }
+button, select { text-transform: none; }
+button, [type='button'], [type='submit'] { -webkit-appearance: button; background-color: transparent; background-image: none; }
+img, svg, video { display: block; vertical-align: middle; }
+img, video { max-width: 100%; height: auto; }
+table { text-indent: 0; border-color: inherit; border-collapse: collapse; }
+
+/* Utility Classes */
+.bg-black { background-color: #000; }
+.bg-white { background-color: #fff; }
+.bg-gray-900 { background-color: #111827; }
+.bg-gray-800 { background-color: #1f2937; }
+.bg-gray-500 { background-color: #6b7280; }
+.bg-orange-500 { background-color: #f97316; }
+.bg-orange-600 { background-color: #ea580c; }
+.bg-red-500 { background-color: #ef4444; }
+.bg-yellow-500 { background-color: #eab308; }
+.bg-green-500 { background-color: #22c55e; }
+.bg-blue-500 { background-color: #3b82f6; }
+.bg-purple-500 { background-color: #a855f7; }
+.bg-transparent { background-color: transparent; }
+
+.bg-black\/30 { background-color: rgba(0,0,0,0.3); }
+.bg-black\/50 { background-color: rgba(0,0,0,0.5); }
+.bg-black\/80 { background-color: rgba(0,0,0,0.8); }
+.bg-black\/95 { background-color: rgba(0,0,0,0.95); }
+.bg-gray-900\/50 { background-color: rgba(17,24,39,0.5); }
+.bg-orange-500\/10 { background-color: rgba(249,115,22,0.1); }
+.bg-orange-500\/20 { background-color: rgba(249,115,22,0.2); }
+.bg-red-500\/20 { background-color: rgba(239,68,68,0.2); }
+.bg-yellow-500\/20 { background-color: rgba(234,179,8,0.2); }
+.bg-green-500\/20 { background-color: rgba(34,197,94,0.2); }
+.bg-purple-500\/20 { background-color: rgba(168,85,247,0.2); }
+.bg-blue-500\/20 { background-color: rgba(59,130,246,0.2); }
+
+.text-white { color: #fff; }
+.text-black { color: #000; }
+.text-gray-300 { color: #d1d5db; }
+.text-gray-400 { color: #9ca3af; }
+.text-gray-500 { color: #6b7280; }
+.text-orange-400 { color: #fb923c; }
+.text-orange-500 { color: #f97316; }
+.text-red-400 { color: #f87171; }
+.text-yellow-400 { color: #facc15; }
+.text-green-400 { color: #4ade80; }
+.text-blue-400 { color: #60a5fa; }
+.text-purple-400 { color: #c084fc; }
+
+.border { border-width: 1px; }
+.border-2 { border-width: 2px; }
+.border-b { border-bottom-width: 1px; }
+.border-orange-500 { border-color: #f97316; }
+.border-gray-800 { border-color: #1f2937; }
+.border-orange-500\/20 { border-color: rgba(249,115,22,0.2); }
+.border-orange-500\/30 { border-color: rgba(249,115,22,0.3); }
+.border-orange-500\/50 { border-color: rgba(249,115,22,0.5); }
+.border-red-500\/30 { border-color: rgba(239,68,68,0.3); }
+
+.rounded { border-radius: 0.25rem; }
+.rounded-lg { border-radius: 0.5rem; }
+.rounded-xl { border-radius: 0.75rem; }
+.rounded-full { border-radius: 9999px; }
+
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 0.75rem; }
+.p-4 { padding: 1rem; }
+.p-5 { padding: 1.25rem; }
+.p-6 { padding: 1.5rem; }
+.p-8 { padding: 2rem; }
+.px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }.jpg
+.px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+.px-4 { padding-left: 1rem; padding-right: 1rem; }
+.px-8 { padding-left: 2rem; padding-right: 2rem; }
+.py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+
+.pt-16 { padding-top: 4rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 0.75rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-10 { margin-bottom: 2.5rem; }
+.mb-12 { margin-bottom: 3rem; }
+.mb-16 { margin-bottom: 4rem; }
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+.w-8 { width: 2rem; }
+.w-10 { width: 2.5rem; }
+.w-16 { width: 4rem; }
+.w-full { width: 100%; }
+.h-8 { height: 2rem; }
+.h-10 { height: 2.5rem; }
+.h-16 { height: 4rem; }
+.h-24 { height: 6rem; }
+.h-full { height: 100%; }
+.min-h-screen { min-height: 100vh; }
+
+.max-w-3xl { max-width: 48rem; }
+.max-w-5xl { max-width: 64rem; }
+.max-w-7xl { max-width: 80rem; }
+
+.flex { display: flex; }
+.grid { display: grid; }
+.hidden { display: none; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.justify-between { justify-content: space-between; }
+.justify-center { justify-content: center; }
+.gap-1 { gap: 0.25rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+.space-y-1 > * + * { margin-top: 0.25rem; }
+.space-y-2 > * + * { margin-top: 0.5rem; }
+.space-y-3 > * + * { margin-top: 0.75rem; }
+.space-y-4 > * + * { margin-top: 1rem; }
+.space-y-6 > * + * { margin-top: 1.5rem; }
+.space-x-1 > * + * { margin-left: 0.25rem; }
+
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.fixed { position: fixed; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+.top-0 { top: 0; }
+.left-0 { left: 0; }
+.right-0 { right: 0; }
+.z-10 { z-index: 10; }
+.z-50 { z-index: 50; }
+.z-100 { z-index: 100; }
+
+.overflow-hidden { overflow: hidden; }
+.overflow-y-auto { overflow-y: auto; }
+
+.text-xs { font-size: 0.75rem; line-height: 1rem; }
+.text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+.text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+.text-4xl { font-size: 2.25rem; line-height: 2.5rem; }
+.text-5xl { font-size: 3rem; line-height: 1; }
+
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+.cursor-pointer { cursor: pointer; }
+.transition-all { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.hover\:bg-orange-500:hover { background-color: #f97316; }
+.hover\:bg-orange-600:hover { background-color: #ea580c; }
+.hover\:bg-orange-500\/10:hover { background-color: rgba(249,115,22,0.1); }
+.hover\:bg-orange-500\/20:hover { background-color: rgba(249,115,22,0.2); }
+.hover\:text-white:hover { color: #fff; }
+.hover\:text-orange-400:hover { color: #fb923c; }
+.hover\:border-orange-500:hover { border-color: #f97316; }
+.hover\:border-orange-500\/50:hover { border-color: rgba(249,115,22,0.5); }
+.hover\:border-red-500:hover { border-color: #ef4444; }
+.hover\:border-purple-500:hover { border-color: #a855f7; }
+.hover\:border-green-500:hover { border-color: #22c55e; }
+.hover\:border-blue-500:hover { border-color: #3b82f6; }
+.hover\:border-yellow-500:hover { border-color: #eab308; }
+
+.flex-shrink-0 { flex-shrink: 0; }
+.flex-grow { flex-grow: 1; }
+.flex-wrap { flex-wrap: wrap; }
+
+.bg-gradient-to-br { background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)); }
+.bg-gradient-to-r { background-image: linear-gradient(to right, var(--tw-gradient-stops)); }
+.from-black { --tw-gradient-from: #000; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0,0,0,0)); }
+.via-gray-900 { --tw-gradient-stops: var(--tw-gradient-from), #111827, var(--tw-gradient-to, rgba(17,24,39,0)); }
+.to-black { --tw-gradient-to: #000; }
+.from-orange-500\/10 { --tw-gradient-from: rgba(249,115,22,0.1); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(249,115,22,0)); }
+.to-transparent { --tw-gradient-to: transparent; }
+
+.opacity-20 { opacity: 0.2; }
+.backdrop-blur-sm { backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); }
+
+@media (min-width: 640px) {
+    .sm\:px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+@media (min-width: 768px) {
+    .md\:flex { display: flex; }
+    .md\:hidden { display: none; }
+    .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .md\:text-2xl { font-size: 1.5rem; line-height: 2rem; }
+    .md\:text-7xl { font-size: 4.5rem; line-height: 1; }
+}
+@media (min-width: 1024px) {
+    .lg\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+    .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .lg\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .lg\:grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+    .lg\:grid-cols-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+    .lg\:grid-cols-8 { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+}
+</style>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1a1a1a; }
+        ::-webkit-scrollbar-thumb { background: #f97316; border-radius: 4px; }
+        ::selection { background: #f97316; color: white; }
+        html { scroll-behavior: smooth; }
+        .modal { display: none; position: fixed; z-index: 100; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); overflow-y: auto; }
+        .modal.active { display: flex; justify-content: center; align-items: flex-start; padding: 2rem; }
+        .modal-content { background: #111; border: 1px solid #f97316; border-radius: 1rem; max-width: 900px; width: 100%; margin-top: 2rem; animation: slideIn 0.3s ease; }
+        @keyframes slideIn { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        .verzekeraar-card { cursor: pointer; transition: all 0.3s ease; }
+        .verzekeraar-card:hover { transform: translateY(-4px); border-color: #f97316; }
+        .logo-placeholder { width: 48px; height: 48px; background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: white; font-size: 12px; }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-black/95 backdrop-blur-sm z-50 border-b border-orange-500/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <svg class="h-10" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+    <text x="10" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#f97316">ITDS</text>
+    <rect x="110" y="18" width="100" height="24" fill="none" stroke="#f97316" stroke-width="2" rx="5"/>
+    <text x="122" y="34" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#f5f5f5">INSURANCE</text>
+</svg>
+                <div class="hidden md:flex space-x-1">
+                    <a href="#home" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-300 hover:bg-orange-500/20 hover:text-orange-400">Home</a>
+                    <a href="#executive" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-300 hover:bg-orange-500/20 hover:text-orange-400">Executive Summary</a>
+                    <a href="#trends" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-300 hover:bg-orange-500/20 hover:text-orange-400">Trends</a>
+                    <a href="#kansen" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-300 hover:bg-orange-500/20 hover:text-orange-400">Kansen ITDS</a>
+                    <a href="#verzekeraars" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-300 hover:bg-orange-500/20 hover:text-orange-400">Verzekeraars</a>
+                    <a href="#bronnen" class="px-4 py-2 rounded-lg text-sm font-medium text-gray-300 hover:bg-orange-500/20 hover:text-orange-400">Bronnen</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal for Verzekeraar Details -->
+    <div id="verzekeraarModal" class="modal">
+        <div class="modal-content p-8">
+            <div class="flex justify-between items-start mb-6">
+                <div class="flex items-center gap-4">
+                    <div id="modalLogo" class="logo-placeholder"></div>
+                    <div>
+                        <h2 id="modalTitle" class="text-3xl font-bold text-white"></h2>
+                        <p id="modalSubtitle" class="text-orange-400"></p>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="text-gray-400 hover:text-white text-3xl">&times;</button>
+            </div>
+            <div id="modalContent" class="space-y-6"></div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black relative overflow-hidden pt-16">
+        <!-- Optionele achtergrond: verwijder comment om te activeren -->
+        <!-- <div class="absolute inset-0 opacity-10" style="background-image: url('achtergrond/Office.jpg'); background-size: cover; background-position: center;"></div> -->
+        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle, #f97316 1px, transparent 1px); background-size: 40px 40px;"></div>
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <svg class="h-24 mx-auto mb-8" viewBox="0 0 450 120" xmlns="http://www.w3.org/2000/svg">
+    <text x="50" y="80" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#f97316">ITDS</text>
+    <rect x="260" y="35" width="170" height="50" fill="none" stroke="#f97316" stroke-width="3" rx="8"/>
+    <text x="285" y="70" font-family="Arial, sans-serif" font-size="20" font-weight="600" fill="#f5f5f5">INSURANCE</text>
+</svg>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
+                <span class="text-orange-500">Strategisch Overzicht</span><br>
+                Nederlandse Verzekeraars
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-8">62 Verzekeraars • 2026-2028 • Consultancy Kansen</p>
+            <div class="flex flex-wrap justify-center gap-4 mb-16">
+                <a href="#executive" class="px-8 py-4 bg-orange-500 text-white font-bold rounded-lg hover:bg-orange-600 transition-all">Executive Summary</a>
+                <a href="#verzekeraars" class="px-8 py-4 bg-transparent border-2 border-orange-500 text-orange-500 font-bold rounded-lg hover:bg-orange-500/10 transition-all">Bekijk Verzekeraars</a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center"><div class="text-4xl font-bold text-orange-500">62</div><div class="text-gray-400">Verzekeraars</div></div>
+                <div class="text-center"><div class="text-4xl font-bold text-orange-500">6</div><div class="text-gray-400">Tiers</div></div>
+                <div class="text-center"><div class="text-4xl font-bold text-orange-500">€154M</div><div class="text-gray-400">Marktomvang</div></div>
+                <div class="text-center"><div class="text-4xl font-bold text-orange-500">2026</div><div class="text-gray-400">Data Update</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section id="executive" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Header -->
+            <h2 class="text-4xl font-bold text-white mb-4 text-center">
+                <span class="text-orange-500">Executive</span> Summary
+            </h2>
+            
+            <!-- Strategische Verschuiving --> 
+            <div class="bg-gradient-to-r from-orange-500/20 to-transparent rounded-xl p-6 mb-8 border-l-4 border-orange-500">
+                <p class="text-lg text-gray-300 leading-relaxed mb-3">
+                    Voor 2026-2027 verschuift ITDS van <strong>"Compliance as a Service"</strong> naar 
+                    <strong class="text-orange-400">"Strategic Risk Advisory"</strong>. We helpen verzekeraars niet alleen 
+                    om 'in control' te zijn op DORA en ESG, maar maken <strong>direct impact op de balans</strong> door 
+                    expertise op het snijvlak van:
+                </p>
+                <div class="grid md:grid-cols-3 gap-3">
+                    <div class="bg-black/30 rounded p-3 text-sm">
+                        <strong class="text-orange-400">💰 Kapitaaloptimalisatie:</strong> Solvency II Partial Models, Run-off management
+                    </div>
+                    <div class="bg-black/30 rounded p-3 text-sm">
+                        <strong class="text-orange-400">⚙️ Operationele Efficiëntie:</strong> Legacy systemen, AI governance, automatisering
+                    </div>
+                    <div class="bg-black/30 rounded p-3 text-sm">
+                        <strong class="text-orange-400">🛡️ Strategische Compliance:</strong> DORA, Sanctiewet 2.0, Perpetual KYC
+                    </div>
+                </div>
+                <p class="text-gray-400 text-sm mt-3 italic">
+                    🤝 <strong class="text-orange-400">Joint Effort BL Risk & BL Data:</strong> We doorbreken interne silo's 
+                    om verzekeraars te helpen met complexe vraagstukken op het snijvlak van risico, data en IT.
+                </p>
+            </div>
+
+            <!-- Intro -->
+            <p class="text-gray-400 text-center mb-8 max-w-3xl mx-auto">
+                De Nederlandse verzekeringsmarkt staat voor een "perfecte storm" van veranderingen. 
+                <strong class="text-orange-400">Negen grote krachten</strong> werken tegelijk op de sector in.
+            </p>
+            
+            <!-- De 9 Krachten -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                
+                <!-- 1. Consolidatie -->
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-orange-500 transition-all">
+                    <div class="text-orange-500 text-4xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold text-white mb-2">1. Consolidatie Versnelt</h3>
+                    <p class="text-gray-400">a.s.r./Aegon (€4,9B), VGZ/ONVZ. Dealwaarde H1 2025: €565M. ~4.000 makelaars over.</p>
+                </div>
+                
+                <!-- 2. DORA -->
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-red-500 transition-all">
+                    <div class="text-red-500 text-4xl mb-4">🔐</div>
+                    <h3 class="text-xl font-bold text-white mb-2">2. DORA - AL ACTIEF!</h3>
+                    <p class="text-gray-400">Sinds 17 jan 2025. ~50% in volle gang, 44% nog bezig. DNB toezicht 2025-2026. Boetes tot €10M.</p>
+                </div>
+                
+                <!-- 3. AI Act -->
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-purple-500 transition-all">
+                    <div class="text-purple-500 text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold text-white mb-2">3. AI Act Augustus 2026</h3>
+                    <p class="text-gray-400">60-80% plant AI. Zilveren Kruis eist AI-strategie zorgaanbieders eind 2026. Boetes tot €35M/7%.</p>
+                </div>
+                
+                <!-- 4. Klimaat -->
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-green-500 transition-all">
+                    <div class="text-green-500 text-4xl mb-4">🌡️</div>
+                    <h3 class="text-xl font-bold text-white mb-2">4. Klimaatrisico's</h3>
+                    <p class="text-gray-400">75% EU klimaatschade onverzekerd. #5 wereldwijd (hoogste ooit). Net-zero targets 2040-2050.</p>
+                </div>
+                
+                <!-- 5. Cyber -->
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-red-500 transition-all">
+                    <div class="text-red-500 text-4xl mb-4">💻</div>
+                    <h3 class="text-xl font-bold text-white mb-2">5. Cyberrisico #1</h3>
+                    <p class="text-gray-400">4e jaar #1 (Allianz 2025, +7pp). Ransomware 58% grote claims. €4.2M gemiddelde datalek.</p>
+                </div>
+                
+                <!-- 6. Solvency II -->
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-blue-500 transition-all">
+                    <div class="text-blue-500 text-4xl mb-4">🏛️</div>
+                    <h3 class="text-xl font-bold text-white mb-2">6. Solvency II Review</h3>
+                    <p class="text-gray-400">Herziening 2024-2025. Partial Models kapitaaloptimalisatie. Risicomarge -15-30% = €3-8B vrijval.</p>
+                </div>
+                
+                <!-- 7. Run-off (NIEUW) -->
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-yellow-500 transition-all">
+                    <div class="text-yellow-500 text-4xl mb-4">📦</div>
+                    <h3 class="text-xl font-bold text-white mb-2">7. Run-off Portfolios</h3>
+                    <p class="text-gray-400">Gesloten boeken vreten kosten. Legacy IT blokkeert kapitaal. ITDS Run-off Factory: tijdelijk beheer.</p>
+                </div>
+                
+                <!-- 8. Sanctiewet (NIEUW) -->
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-red-500 transition-all">
+                    <div class="text-red-500 text-4xl mb-4">⚖️</div>
+                    <h3 class="text-xl font-bold text-white mb-2">8. Sanctiewet 2.0 & KYC</h3>
+                    <p class="text-gray-400">Geopolitiek (Rusland, Midden-Oosten). Perpetual KYC standaard. Event-driven screening nodig.</p>
+                </div>
+                
+                <!-- 9. Digitalisering -->
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-orange-500 transition-all">
+                    <div class="text-orange-500 text-4xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold text-white mb-2">9. Hyper-Automatisering</h3>
+                    <p class="text-gray-400">Target: 80% claims STP binnen 3 jaar. Legacy blokkeert. Human-in-the-loop governance cruciaal.</p>
+                </div>
+            </div>
+
+            <!-- Kerncijfers -->
+            <div class="bg-gradient-to-r from-orange-500/10 to-transparent rounded-xl p-8 border border-orange-500/30">
+                <h3 class="text-2xl font-bold text-white mb-6">Kerncijfers Nederlandse Markt 2026</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div><div class="text-3xl font-bold text-orange-500">€85B+</div><div class="text-gray-400">Totale Premievolume NL</div></div>
+                    <div><div class="text-3xl font-bold text-orange-500">218%</div><div class="text-gray-400">a.s.r. Solvabiliteit 2025</div></div>
+                    <div><div class="text-3xl font-bold text-orange-500">236</div><div class="text-gray-400">NN AI use cases productie</div></div>
+                    <div><div class="text-3xl font-bold text-orange-500">€1B</div><div class="text-gray-400">Achmea doel 2030</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Trends Section -->
+    <section id="trends" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-4 text-center">Sector <span class="text-orange-500">Trends</span> 2026-2028</h2>
+            <p class="text-gray-400 text-center mb-12 max-w-3xl mx-auto">Klik op "Meer Info" voor uitgebreide analyse, impact, acties en budget.</p>
+            
+            <div id="trendsContainer" class="space-y-4">
+                <!-- Trends worden hier dynamisch geladen -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Kansen ITDS Section -->
+    <section id="kansen" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-4 text-center">Kansen voor <span class="text-orange-500">ITDS</span> Insurance Consultancy</h2>
+            <p class="text-gray-400 text-center mb-12 max-w-3xl mx-auto">Totale consultancy markt 2026-2028: <strong class="text-orange-400">€154M direct</strong> (incl. Run-off + KYC) + €425M via-model (healthcare). ITDS target: 2-5% marktaandeel.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-orange-500 transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-white">DORA Compliance</h3>
+                        <span class="px-2 py-1 rounded text-xs font-medium bg-red-500/20 text-red-400">URGENT</span>
+                    </div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">Totale Markt</div><div class="text-2xl font-bold text-orange-500">€31,5M</div></div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">ITDS Target (2-5%)</div><div class="text-lg font-semibold text-white">€630k - €1,6M</div></div>
+                    <div><div class="text-sm text-gray-500 mb-2">Services</div>
+                        <ul class="space-y-1 text-gray-400 text-sm">
+                            <li>→ Gap analyses</li>
+                            <li>→ Informatieregister opzetten</li>
+                            <li>→ Third-party risk management</li>
+                            <li>→ Bestuursopleidingen</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-orange-500 transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-white">AI Strategy & Implementation</h3>
+                        <span class="px-2 py-1 rounded text-xs font-medium bg-orange-500/20 text-orange-400">HOOG</span>
+                    </div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">Totale Markt</div><div class="text-2xl font-bold text-orange-500">€30M</div></div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">ITDS Target (2-5%)</div><div class="text-lg font-semibold text-white">€600k - €1,5M</div></div>
+                    <div><div class="text-sm text-gray-500 mb-2">Services</div>
+                        <ul class="space-y-1 text-gray-400 text-sm">
+                            <li>→ AI-readiness assessments</li>
+                            <li>→ AI Act compliance</li>
+                            <li>→ Responsible AI frameworks</li>
+                            <li>→ MLOps implementatie</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-orange-500 transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-white">Integratie Projecten</h3>
+                        <span class="px-2 py-1 rounded text-xs font-medium bg-orange-500/20 text-orange-400">HOOG</span>
+                    </div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">Totale Markt</div><div class="text-2xl font-bold text-orange-500">€25M</div></div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">ITDS Target (2-5%)</div><div class="text-lg font-semibold text-white">€500k - €1,25M</div></div>
+                    <div><div class="text-sm text-gray-500 mb-2">Services</div>
+                        <ul class="space-y-1 text-gray-400 text-sm">
+                            <li>→ a.s.r./Aegon PMO</li>
+                            <li>→ VGZ/ONVZ migratie</li>
+                            <li>→ Systeem consolidatie</li>
+                            <li>→ Change management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-orange-500 transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-white">Solvency II Herziening</h3>
+                        <span class="px-2 py-1 rounded text-xs font-medium bg-yellow-500/20 text-yellow-400">MEDIUM</span>
+                    </div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">Totale Markt</div><div class="text-2xl font-bold text-orange-500">€25M</div></div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">ITDS Target (2-5%)</div><div class="text-lg font-semibold text-white">€500k - €1,25M</div></div>
+                    <div><div class="text-sm text-gray-500 mb-2">Services</div>
+                        <ul class="space-y-1 text-gray-400 text-sm">
+                            <li>→ Impact analyses</li>
+                            <li>→ Intern model optimalisatie</li>
+                            <li>→ Liquiditeitsrisico frameworks</li>
+                            <li>→ SNCU-trajecten</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-orange-500 transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-white">Healthcare B2B</h3>
+                        <span class="px-2 py-1 rounded text-xs font-medium bg-purple-500/20 text-purple-400">STRATEGISCH</span>
+                    </div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">Totale Markt (via-model)</div><div class="text-2xl font-bold text-orange-500">€425M</div></div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">ITDS Target</div><div class="text-lg font-semibold text-white">€2M - €5M</div></div>
+                    <div><div class="text-sm text-gray-500 mb-2">Services</div>
+                        <ul class="space-y-1 text-gray-400 text-sm">
+                            <li>→ AI-strategie zorgaanbieders</li>
+                            <li>→ Hybride zorg implementatie</li>
+                            <li>→ Databeschikbaarheid</li>
+                            <li>→ IZA transformaties</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-orange-500 transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-white">Data & Analytics</h3>
+                        <span class="px-2 py-1 rounded text-xs font-medium bg-yellow-500/20 text-yellow-400">MEDIUM</span>
+                    </div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">Totale Markt</div><div class="text-2xl font-bold text-orange-500">€20M</div></div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">ITDS Target (2-5%)</div><div class="text-lg font-semibold text-white">€400k - €1M</div></div>
+                    <div><div class="text-sm text-gray-500 mb-2">Services</div>
+                        <ul class="space-y-1 text-gray-400 text-sm">
+                            <li>→ Data governance</li>
+                            <li>→ MDM implementatie</li>
+                            <li>→ Pricing analytics</li>
+                            <li>→ Fraud detection</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-yellow-500 transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-white">Run-off Factory 📦</h3>
+                        <span class="px-2 py-1 rounded text-xs font-medium bg-orange-500/20 text-orange-400">HOOG</span>
+                    </div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">Totale Markt</div><div class="text-2xl font-bold text-orange-500">€15-25M</div></div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">ITDS Target</div><div class="text-lg font-semibold text-white">€500k - €2M</div></div>
+                    <div><div class="text-sm text-gray-500 mb-2">Services</div>
+                        <ul class="space-y-1 text-gray-400 text-sm">
+                            <li>→ Tijdelijk beheer legacy portfolios</li>
+                            <li>→ Migratie naar moderne platforms</li>
+                            <li>→ Capital release strategieën</li>
+                            <li>→ Knowledge transfer & documentatie</li>
+                        </ul>
+                    </div>
+                    <div class="mt-3 text-xs text-gray-500 italic">🎯 Strategic Risk Advisory: kapitaaloptimalisatie + operationele efficiëntie</div>
+                </div>
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800 hover:border-red-500 transition-all">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-lg font-bold text-white">KYC & Sanctiewet 2.0 ⚖️</h3>
+                        <span class="px-2 py-1 rounded text-xs font-medium bg-red-500/20 text-red-400">URGENT</span>
+                    </div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">Totale Markt</div><div class="text-2xl font-bold text-orange-500">€20-30M</div></div>
+                    <div class="mb-4"><div class="text-sm text-gray-500">ITDS Target</div><div class="text-lg font-semibold text-white">€600k - €2M</div></div>
+                    <div><div class="text-sm text-gray-500 mb-2">Services</div>
+                        <ul class="space-y-1 text-gray-400 text-sm">
+                            <li>→ KYC Remediation (achtersanden)</li>
+                            <li>→ Perpetual KYC platform</li>
+                            <li>→ Event-driven screening</li>
+                            <li>→ Managed Services KYC</li>
+                        </ul>
+                    </div>
+                    <div class="mt-3 text-xs text-gray-500 italic">⚠️ DNB boetes: €5-50M - compliance is niet optioneel</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verzekeraars Section -->
+    <section id="verzekeraars" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-4 text-center"><span class="text-orange-500">62</span> Nederlandse Verzekeraars</h2>
+            <p class="text-gray-400 text-center mb-8">Klik op een verzekeraar voor gedetailleerde informatie. ⭐ = Direct contact beschikbaar.</p>
+            
+            <!-- Tier Uitleg -->
+            <div class="bg-gray-900/50 rounded-xl p-6 border border-gray-800 mb-12">
+                <h3 class="text-xl font-bold text-white mb-4">📊 Tier Classificatie Uitleg</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
+                    <div class="flex items-start gap-3">
+                        <span class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">0</span>
+                        <div><strong class="text-purple-400">Insurtechs</strong><p class="text-gray-400">Digitale disruptors, AI-gedreven, internationale expansie</p></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">1</span>
+                        <div><strong class="text-red-400">Top Targets</strong><p class="text-gray-400">Marktleiders, grootste consultancy potentieel, €4B+ premie</p></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">2</span>
+                        <div><strong class="text-orange-400">Healthcare</strong><p class="text-gray-400">Zorgverzekeraars, pensioen specialists, coöperaties</p></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">3</span>
+                        <div><strong class="text-yellow-400">Mid-Size Direct</strong><p class="text-gray-400">Directe verzekeraars, labels van grote groepen</p></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">4</span>
+                        <div><strong class="text-green-400">Niche/Bancassurance</strong><p class="text-gray-400">Specialisten, coöperaties, bank-partnerships</p></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">5</span>
+                        <div><strong class="text-blue-400">Specialty/Captive</strong><p class="text-gray-400">Beroepsgroepen, onderlinge, specialty lines</p></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="w-8 h-8 bg-gray-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">6</span>
+                        <div><strong class="text-gray-400">International</strong><p class="text-gray-400">Buitenlandse groepen, HQ-gestuurd, corporate focus</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tier 0 -->
+            <div class="mb-10">
+                <h3 class="text-xl font-bold text-purple-400 mb-4 flex items-center gap-2"><span class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white text-sm">0</span> Insurtechs & Digital Disruptors</h3>
+                <div class="grid md:grid-cols-3 gap-4" id="tier0"></div>
+            </div>
+
+            <!-- Tier 1 -->
+            <div class="mb-10">
+                <h3 class="text-xl font-bold text-red-400 mb-4 flex items-center gap-2"><span class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-sm">1</span> Top Targets</h3>
+                <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-4" id="tier1"></div>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="mb-10">
+                <h3 class="text-xl font-bold text-orange-400 mb-4 flex items-center gap-2"><span class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white text-sm">2</span> Healthcare Specialists</h3>
+                <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-4" id="tier2"></div>
+            </div>
+
+            <!-- Tier 3 -->
+            <div class="mb-10">
+                <h3 class="text-xl font-bold text-yellow-400 mb-4 flex items-center gap-2"><span class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-white text-sm">3</span> Mid-Size Direct</h3>
+                <div class="grid md:grid-cols-4 lg:grid-cols-8 gap-4" id="tier3"></div>
+            </div>
+
+            <!-- Tier 4 -->
+            <div class="mb-10">
+                <h3 class="text-xl font-bold text-green-400 mb-4 flex items-center gap-2"><span class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white text-sm">4</span> Niche / Bancassurance</h3>
+                <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-4" id="tier4"></div>
+            </div>
+
+            <!-- Tier 5 -->
+            <div class="mb-10">
+                <h3 class="text-xl font-bold text-blue-400 mb-4 flex items-center gap-2"><span class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm">5</span> Specialty / Captive</h3>
+                <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-4" id="tier5"></div>
+            </div>
+
+            <!-- Tier 6 -->
+            <div class="mb-10">
+                <h3 class="text-xl font-bold text-gray-400 mb-4 flex items-center gap-2"><span class="w-8 h-8 bg-gray-500 rounded-full flex items-center justify-center text-white text-sm">6</span> International Players</h3>
+                <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-4" id="tier6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bronnen Section -->
+    <section id="bronnen" class="py-20 bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-white mb-4 text-center"><span class="text-orange-500">Bronnen</span> & Methodologie</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800">
+                    <h3 class="text-xl font-bold text-orange-500 mb-4">📚 Primaire Bronnen</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>• Jaarverslagen 2024 (62 verzekeraars)</li>
+                        <li>• SFCR Rapporten (Solvency II rapportage)</li>
+                        <li>• Verbond van Verzekeraars Trendenquête 2025</li>
+                        <li>• Verbond van Verzekeraars Koers 2025-2027 (publicatie)</li>
+                        <li>• DNB DORA Seminars & Toezichtberichten</li>
+                        <li>• AFM Publicaties & Templates</li>
+                    </ul>
+                </div>
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800">
+                    <h3 class="text-xl font-bold text-orange-500 mb-4">📊 Consultancy & Onderzoek</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>• Deloitte Outlook 2025 Pensioen & Verzekering</li>
+                        <li>• PwC Banana Skins 2025</li>
+                        <li>• Allianz Risk Barometer 2025</li>
+                        <li>• BHBS Overnamemonitor H1 2025</li>
+                        <li>• McKinsey Insurance Practice Reports</li>
+                    </ul>
+                </div>
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800">
+                    <h3 class="text-xl font-bold text-orange-500 mb-4">📰 Vakmedia</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>• InFinance (infinance.nl)</li>
+                        <li>• RiskEnBusiness (riskenbusiness.nl)</li>
+                        <li>• Skipr (skipr.nl)</li>
+                        <li>• AMWeb (amweb.nl)</li>
+                        <li>• VVP Online (vvponline.nl)</li>
+                        <li>• Schade Magazine</li>
+                    </ul>
+                </div>
+                <div class="bg-black/50 rounded-xl p-6 border border-gray-800">
+                    <h3 class="text-xl font-bold text-orange-500 mb-4">🔗 Specifieke Publicaties</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>• ✅ a.s.r. Jaarverslag 2025, gepubliceerd 25-03-2026</li>
+                        <li>• ✅ a.s.r. Jaarcijfers 2025, persbericht 18-02-2026</li>
+                        <li>• ✅ Achmea Jaarcijfers 2025, persbericht 11-03-2026</li>
+                        <li>• ✅ Achmea Next Level Strategie 2030, november 2025</li>
+                        <li>• ✅ NN Group FY25 Press Release, 12-02-2026</li>
+                        <li>• ✅ NN Group Analyst Presentation FY25, 12-02-2026</li>
+                        <li>• VGZ/ONVZ Partnership 02-10-2025</li>
+                        <li>• CZ Zorgkantoor Jaaroverzicht 2024</li>
+                        <li>• Athora Netherlands Annual Results 2024</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="bg-orange-500/10 rounded-xl p-8 border border-orange-500/30">
+                <h3 class="text-xl font-bold text-orange-500 mb-4">⚠️ Disclaimer</h3>
+                <div class="text-gray-400 space-y-4 text-sm">
+                    <p><strong>Dit document is uitsluitend bedoeld voor informatieve doeleinden</strong> en vormt geen beleggingsadvies, juridisch advies, of aanbeveling tot het aangaan van zakelijke relaties met de genoemde verzekeraars.</p>
+                    <p>De informatie in dit document is met zorg samengesteld op basis van publiek beschikbare bronnen, waaronder jaarverslagen, persberichten en sector analyses. <strong>ITDS garandeert niet de volledigheid, juistheid of actualiteit</strong> van de gepresenteerde informatie.</p>
+                    <p>Marktomvang schattingen en consultancy kansen zijn indicatief en gebaseerd op sector analyses. Werkelijke kansen kunnen afwijken afhankelijk van marktomstandigheden, concurrentie en beschikbaarheid van opdrachten.</p>
+                    <p>Contactinformatie betreft bestaande relaties en netwerk van ITDS. Het vermelden van contacten impliceert geen bevestigde opdrachten of toezeggingen.</p>
+                    <p class="text-orange-400"><strong>Laatst bijgewerkt:</strong> 25 maart 2026 | <strong>Versie:</strong> 4.0, Bijgewerkt met jaarcijfers 2025: Achmea (11 mrt), a.s.r. (18 feb + jaarverslag 25 mrt), NN Group (12 feb)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center gap-4 mb-4 md:mb-0">
+                    <svg class="h-10" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+    <text x="10" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#f97316">ITDS</text>
+    <rect x="110" y="18" width="100" height="24" fill="none" stroke="#f97316" stroke-width="2" rx="5"/>
+    <text x="122" y="34" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#f5f5f5">INSURANCE</text>
+</svg>
+                    <div>
+                        <div class="text-white font-bold">ITDS Insurance Consultancy</div>
+                        <div class="text-gray-500 text-sm">Strategisch Partner voor Verzekeraars</div>
+                    </div>
+                </div>
+                <div class="text-gray-500 text-sm">© 2026 ITDS | Made by Alpharoq</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // Verzekeraars Data met volledige informatie
+    
+        // Uitgebreide trend informatie
+        const trendDetails = {
+            1: {
+                title: "Cyberrisico's",
+                urgentie: "HOOG",
+                timeline: "Continu",
+                waarom: "Cyber is voor het 4e jaar op rij het #1 bedrijfsrisico wereldwijd met record voorsprong van 7 procentpunt (Allianz Risk Barometer 2025, 3,778 experts uit 106 landen). Ransomware domineert: 58% van alle grote claims. Gemiddelde datalek kost €4.2M in Nederland (IBM 2024).",
+                impact: [
+                    "Ransomware is 58% van grote cyber claims >€1M (Allianz 2025)",
+                    "Verzekeraars zijn #1 doelwit (na financiële instellingen)", 
+                    "DORA AL ACTIEF sinds 17 jan 2025 - operationele weerbaarheid verplicht NU",
+                    "Premies cyberverzekeringen stijgen 50-100% jaarlijks"
+                ],
+                actie: [
+                    "Zero-trust architectuur implementeren",
+                    "24/7 Security Operations Center (SOC) opzetten",
+                    "Incident response playbooks updaten",
+                    "Cyber risk assessment van hele supply chain",
+                    "Staff awareness training verplicht maken",
+                    "Cyberverzekering voor eigen organisatie afsluiten"
+                ],
+                verzekeraars: ["Allianz", "AIG", "Chubb", "AXA"],
+                budget: "€10-50M investering, afhankelijk van grootte"
+            },
+            2: {
+                title: "Digitalisering Interne Operaties",
+                urgentie: "HOOG",
+                timeline: "2026-2028",
+                waarom: "Legacy systemen zijn duur, inefficiënt en blokkeren innovatie. Moderne verzekeraars automatiseren 80% van claims binnen 3 jaar. Wie achterblijft verliest marktaandeel.",
+                impact: [
+                    "Handmatige processen kosten 60% meer dan geautomatiseerde",
+                    "Klanten verwachten real-time service (instant quotes, direct uitkeren)",
+                    "AI kan 70% van simpele claims automatisch afhandelen",
+                    "Fouten: 5-10% handmatig vs <0.5% geautomatiseerd"
+                ],
+                actie: [
+                    "Core insurance platform moderniseren (replace mainframes)",
+                    "Claims processing volledig digitaliseren met AI/ML",
+                    "RPA (Robotic Process Automation) voor repetitieve taken",
+                    "API-first architectuur voor ecosysteem integraties",
+                    "Cloud migration (AWS/Azure/Google Cloud)",
+                    "Self-service portals voor klanten én adviseurs"
+                ],
+                voorbeelden: [
+                    "Lemonade: 3 minuten gemiddeld, 32% volledig geautomatiseerd",
+                    "Achmea: AI-chatbot handelt 40% vragen af",
+                    "Aegon: Complete digitale pensioenadministratie"
+                ],
+                budget: "€50-200M voor complete transformatie (3-5 jaar)"
+            },
+            3: {
+                title: "Generatieve AI",
+                urgentie: "HOOG",
+                timeline: "Aug 2026",
+                waarom: "AI impact is NIEUW in top 10 bedrijfsrisicos 2025 (#10) - McKinsey noemt het een strategic inflection point. Experimenteren is voorbij, implementatie is cruciaal. Allianz voert 200+ AI initiatieven uit. Commercial P&C behaalde 91% combined ratio (2023) - 60% door execution vs 40% portfolio (McKinsey 2025).",
+                impact: [
+                    "300 AI use cases mogelijk bij grote verzekeraars",
+                    "Underwriting: van dagen naar minuten (standaard cases)",
+                    "Klantservice: 24/7 beschikbaar, beantwoordt 95% vragen correct",
+                    "Fraud detection: 40% effectiever (90%+ accuracy vs 65-70%) dan regel-based systemen",
+                    "Personalisatie: op maat gemaakte polissen per klant"
+                ],
+                actie: [
+                    "AI Center of Excellence oprichten met dedicated team",
+                    "ChatGPT-achtige interface voor klanten (AchmaeGPT, AllianGPT)",
+                    "Copilot voor underwriters: AI assisteert bij risico-inschatting",
+                    "Automated document processing (OCR + GenAI)",
+                    "Predictive analytics voor churn, cross-sell, claims",
+                    "Compliance: AI model governance en explainability"
+                ],
+                voorbeelden: [
+                    "Allianz: 200+ AI initiatieven in 2024 (Q2 earnings), focus op claims automation",
+                    "Verzekeraars experimenteren met AI Copilots voor schade-afhandeling",
+                    "AXA: GenAI voor contractanalyse (90% sneller)"
+                ],
+                risicos: "Hallucinations, privacy (GDPR), bias, reputatieschade",
+                budget: "€20-100M (inclusief training, infrastructure, talent)"
+            },
+            4: {
+                title: "Klimaatrisico's & Verzekerbaarheid",
+                urgentie: "STRATEGISCH",
+                timeline: "2030-2050",
+                waarom: "75% klimaatschade EU is niet verzekerd. Overstromingen, droogte, hittegolven nemen toe. Verzekeraars moeten modellen herzien én premies aanpassen. Hele regio's worden onverzekerbaar.",
+                impact: [
+                    "Schade door natuurrampen stijgt 10% per jaar",
+                    "Nederland: overstromingsrisico €100B+ bij doorbraak dijken",
+                    "Loss ratio's stijgen van 70% naar 90%+ in risicogebieden",
+                    "Verzekeraars trekken zich terug uit high-risk zones (bv. Florida, Californië)"
+                ],
+                actie: [
+                    "Klimaatscenario's integreren in pricing modellen (2°C, 3°C, 4°C)",
+                    "Risicozones in kaart brengen (hoog-resolutie flood maps)",
+                    "Premies differentiëren op basis van klimaatrisico",
+                    "Partnerships met overheden (klimaatadaptatie fondsen)",
+                    "Nieuwe producten: parametrische verzekeringen",
+                    "ESG in underwriting: duurzame huizen = lagere premie"
+                ],
+                dillemma: [
+                    "Hogere premies → onbetaalbaar voor kwetsbare groepen",
+                    "Niet verzekeren → maatschappelijk onacceptabel",
+                    "Overheid moet meebetalen (publiek-private partnerships)"
+                ],
+                voorbeelden: [
+                    "Neederland: Klimaatakkoord vereist aanpassing dijken (€1B/jaar)",
+                    "Swiss Re: stop met verzekeren Californië bosbranden",
+                    "Zurich: parametrische drought insurance voor boeren"
+                ],
+                budget: "€5-30M voor modellering + reserves verhogen met miljarden"
+            },
+            5: {
+                title: "DORA Compliance",
+                urgentie: "HOOG",
+                timeline: "ACTIEF sinds 17 jan 2025",
+                waarom: "EU verordening is ACTIEF sinds 17 januari 2025 - bijna 1 jaar in werking! Boetes tot €10M of 5% omzet. Verzekeraars MOETEN IT-risico's beheersen, third-party leveranciers auditten, en incident reporting regelen. DNB voert thematisch toezicht uit in 2025-2026.",
+                impact: [
+                    "Alle kritieke ICT-systemen moeten gemonitord worden",
+                    "Third-party risico management verplicht (alle cloud leveranciers)",
+                    "Incident meldplicht naar toezichthouder binnen 24 uur",
+                    "Penetration testing minimaal jaarlijks",
+                    "Board is verantwoordelijk (niet alleen IT)"
+                ],
+                actie: [
+                    "Gap analyse: waar voldoen we nog niet aan DORA?",
+                    "ICT risk register opstellen (alle systemen inventariseren)",
+                    "Third-party contracts herschrijven (exit clauses, audits)",
+                    "Incident response plan updaten (inclusief communicatie)",
+                    "Testing framework opzetten (pen tests, red teaming)",
+                    "Governance: Board trainingen, risk committee aanstellen"
+                ],
+                deadline: "AL ACTIEF sinds 17 januari 2025 - volledige naleving vereist NU",
+                consequenties: "Non-compliance = boetes tot €10M + reputatieschade + DNB ingrijpen mogelijk",
+                budget: "€3-15M eenmalig + €1-5M jaarlijks compliance kosten"
+            },
+            6: {
+                title: "Solvency II Herziening",
+                urgentie: "MEDIUM",
+                timeline: "Jan 2027",
+                waarom: "EU herziet Solvency II om verzekeraars meer kapitaal te laten investeren in groene projecten en lange termijn investeringen. Impact op SCR, risico-omlaag berekeningen en rapportage.",
+                impact: [
+                    "Risicomarge daalt met ~15-30% (vrijkomt kapitaal)",
+                    "Volatility adjustment verruimd (stabielere balansen)",
+                    "Groene investeringen krijgen lagere risk weging",
+                    "Rapportage wordt uitgebreider (meer granulariteit)",
+                    "Proportionaliteit: kleinere verzekeraars minder last"
+                ],
+                actie: [
+                    "Impact analyse: hoeveel kapitaal komt vrij?",
+                    "Herallocatie kapitaal: meer investeren in infrastructure, private equity",
+                    "ESG scoring integreren in investment models",
+                    "Rapportage systemen updaten (nieuwe templates)",
+                    "ORSA (Own Risk Solvency Assessment) aanpassen",
+                    "ALM (Asset Liability Management) strategie herzien"
+                ],
+                kansen: [
+                    "Lagere kapitaalvereisten = meer winst of lagere premies",
+                    "Investeren in groene energie, infrastructuur (hoger rendement)",
+                    "Concurrentievoordeel als je sneller schakelt"
+                ],
+                budget: "€2-10M voor modeling, systemen, en consultancy"
+            },
+            7: {
+                title: "Wtp Pensioentransitie",
+                urgentie: "HOOG",
+                timeline: "2027-2028",
+                waarom: "Grootste hervorming pensioenstelsel in 50 jaar. Van defined benefit naar defined contribution. Pensioenfondsen en verzekeraars moeten systemen, communicatie en beleggingsstrategieën volledig herzien.",
+                impact: [
+                    "10 miljoen Nederlanders krijgen nieuw pensioencontract",
+                    "Legacy systemen kunnen nieuwe contracten niet verwerken",
+                    "Communicatie: elke deelnemer moet persoonlijke brief krijgen",
+                    "Invaren (transitie van oud naar nieuw): mega operatie",
+                    "Beleggingsrisico verschuift naar deelnemers (meer volatiliteit)"
+                ],
+                actie: [
+                    "IT-systemen migreren naar nieuwe pensioencontracten (DC-ready)",
+                    "Life-cycle beleggingsmodellen ontwikkelen per leeftijdsgroep",
+                    "Communicatiecampagne: pensioenplanner tools, webinars, persoonlijke sessies",
+                    "Invaarproces: methodiek voor waardeoverdracht bepalen",
+                    "Partnership met werkgevers: zij moeten medewerkers informeren",
+                    "Toezicht: nieuwe rapportage eisen aan DNB/AFM"
+                ],
+                uitdagingen: [
+                    "Oudere werknemers zijn benadeeld (geen solidariteit meer)",
+                    "Jonge generatie heeft meer risico (markt timing)",
+                    "Communicatie is complex: 'wat betekent dit voor mijn pensioen?'"
+                ],
+                budget: "€100-500M voor grote pensioenfondsen (systemen + communicatie)"
+            },
+            8: {
+                title: "Hybride Zorg",
+                urgentie: "MEDIUM",
+                timeline: "2026",
+                waarom: "70% zorgpaden kan hybrid: combinatie fysiek + online. VGZ, CZ en Menzis experimenteren al. Dit verlaagt kosten, verhoogt toegankelijkheid, maar vereist nieuwe vergoedingssystematiek.",
+                impact: [
+                    "Thuismonitoring: wearables, apps, sensoren (lagere zorgkosten)",
+                    "E-health: online consult, diagnose op afstand (50% goedkoper)",
+                    "Preventie: AI voorspelt gezondheidsproblemen voordat ze ontstaan",
+                    "Patiënt experience: sneller geholpen, minder reistijd",
+                    "Data: verzekeraars krijgen real-time gezondheidsdata"
+                ],
+                actie: [
+                    "Partnerships met e-health platforms (Luscii, Dokteronline)",
+                    "Vergoedingssystematiek aanpassen: ook online consulten vergoeden",
+                    "Zorginkoop: hybrid zorgpaden als voorwaarde voor contracten",
+                    "Data-analyse: welke patiënten profiteren van hybrid zorg?",
+                    "Privacy: GDPR-compliant omgaan met gezondheidsdata",
+                    "Preventie programma's: coaching, leefstijl interventies"
+                ],
+                voorbeelden: [
+                    "VGZ: 'Samen Beter' platform voor online zorg en monitoring",
+                    "Thuismonitoring kan 20-40% ziekenhuisopnames reduceren (diverse studies)",
+                    "AI-chatbots kunnen 40-60% eerstelijnsvragen afhandelen"
+                ],
+                doelstelling: "70% zorgpaden hybrid in 2027 (VGZ filosofie)",
+                budget: "€10-50M voor platforms, partnerships en verandermanagement"
+            },
+            9: {
+                title: "Run-off Portfolio Management",
+                urgentie: "HOOG",
+                timeline: "2026-2028",
+                waarom: "Run-off portefeuilles (closed books zoals oude levensverzekeringen, lijfrentes) vreten beheerkosten en blokkeren kapitaal. Na consolidaties (a.s.r./Aegon, VGZ/ONVZ) ontstaat een enorme bult aan 'oud beheer'. Verzekeraars zoeken exit-strategieën: verkoop, migratie of outsourcing.",
+                impact: [
+                    "€10-30M jaarlijkse beheerkosten voor middelgrote run-off portfolios",
+                    "Legacy IT-systemen vereisen specialistische kennis die uitsterft (vergrijzing)",
+                    "Kapitaal vastzit in oude producten: kan niet geïnvesteerd worden in groei",
+                    "Regelgeving blijft gelden: DORA, Solvency II, CSRD ook voor oude boeken",
+                    "Klanten hebben nog 20-40 jaar rechten: juridische complexiteit"
+                ],
+                actie: [
+                    "Run-off Factory: ITDS neemt tijdelijk beheer over (6-24 maanden)",
+                    "Migratie naar moderne platforms: kostenbesparing 40-60%",
+                    "Portfolio-analyse: welke boeken verkopen, welke behouden?",
+                    "Capital release strategieën: kapitaal vrijspelen via herfinanciering",
+                    "Procesoptimalisatie: automatiseren uitkeringen, rapportages, klantcontact",
+                    "Knowledge transfer: documenteren legacy producten voordat expertise vertrekt"
+                ],
+                voorbeelden: [
+                    "Aegon legacy portfolio: €100B+ aan oude lijfrentes, complexe fiscale regels",
+                    "VIVAT run-off: zoekt buyers of managed services partners",
+                    "Zwitserleven verkocht run-off aan gespecialiseerde partijen"
+                ],
+                kansen: [
+                    "ITDS Managed Services: resultaatgericht proces overnemen (€500k-€2M/jaar per portfolio)",
+                    "Migratie consultancy: legacy naar moderne systemen (€1-5M per traject)",
+                    "Interim specialisten: ervaren actuarissen/IT'ers (€150-250/uur)"
+                ],
+                budget: "€2-10M voor migratie, €500k-€3M jaarlijks voor managed services"
+            },
+            10: {
+                title: "Sanctiewet 2.0 & Perpetual KYC",
+                urgentie: "HOOG",
+                timeline: "Continu - versneld sinds 2022",
+                waarom: "Geopolitieke situatie (Rusland/Oekraïne, Midden-Oosten, sancties tegen China-gerelateerde entiteiten) maakt statische KYC-checks onvoldoende. Sanctielijsten veranderen wekelijks. DNB deelt forse boetes uit (€5-50M) als poortwachtersfunctie niet op orde is. Verschuiving naar 'event-driven KYC' en 'Perpetual KYC' is onvermijdelijk.",
+                impact: [
+                    "€5-50M DNB-boetes bij non-compliance (recente voorbeelden: meerdere grote verzekeraars)",
+                    "Reputatieschade: 'bank/verzekeraar deed zaken met terroristen'",
+                    "Handmatige checks kosten €50-150 per dossier, miljoen+ klanten",
+                    "False positives: 60-80% van alerts zijn onterecht (frustreert compliance teams)",
+                    "Real-time screening: klant kan niet direct polis krijgen (omzetderving)"
+                ],
+                actie: [
+                    "Event-driven KYC: automatisch hertriggeren bij wijziging klantdata of sanctielijst",
+                    "Real-time sanctie-screening: API's naar leveranciers (Refinitiv, Dow Jones, ComplyAdvantage)",
+                    "UBO-register integratie: Ultimate Beneficial Owners automatisch identificeren",
+                    "PEP-screening: Politically Exposed Persons (politici, ambtenaren) extra monitoren",
+                    "Remediation teams: achterstanden in klantdossiers wegwerken (30-40% heeft incompleet dossier)",
+                    "AI/ML: reduceer false positives met slimme algoritmes (van 80% naar 20%)"
+                ],
+                jargon: [
+                    "UBO = Ultimate Beneficial Owner (wie is uiteindelijk eigenaar?)",
+                    "PEP = Politically Exposed Person (verhoogd integriteitrisico)",
+                    "CDD = Customer Due Diligence (diepgaand klantonderzoek)",
+                    "AML = Anti-Money Laundering (witwaspreventie)",
+                    "Poortwachtersrol = wettelijke plicht om criminelen te weren"
+                ],
+                voorbeelden: [
+                    "Rabobank: €368M boete (2024) voor AML-tekortkomingen",
+                    "ING: €775M boete (2018) witwassen, compliance nog steeds onder verscherpt toezicht",
+                    "Verzekeraars: kleinere boetes €5-20M, maar aantal neemt toe"
+                ],
+                kansen: [
+                    "KYC Remediation: teams van 10-50 FTE voor 6-18 maanden (€2-10M)",
+                    "Perpetual KYC platform: implementatie event-driven systeem (€500k-€2M)",
+                    "Managed Services KYC: ITDS neemt gehele KYC-proces over (€1-5M/jaar)"
+                ],
+                budget: "€5-30M eenmalig voor remediation + €2-10M jaarlijks voor perpetual KYC systeem"
+            }
+        };
+
+const verzekeraars = {
+        // TIER 0 - INSURTECHS
+        "Lemonade": {
+            logoUrl: "logos/lemonade.jpg",
+            tier: 0, type: "Insurtech", premie: "N/A", logo: "LEM", contact: false,
+            actueel: [
+                "AI-chatbots verwerken >50% claims autonoom - recordclaim afgehandeld in 2 seconden",
+                "Data breach 2024 bevestigd: rijbewijsgegevens blootgesteld; herstelmaatregelen doorgevoerd",
+                "Autoverzekering als groeimotor: uitbreiding verwacht in 2025-2026",
+                "Embedded insurance: partnerships met retailers en platforms"
+            ],
+            strategie: [
+                "Schaalvergroting auto- en embedded insurance",
+                "AI-verfijning: underwriting en claims verder automatiseren",
+                "Kostenoptimalisatie: pad naar winstgevendheid",
+                "Internationale expansie: UK, DE, FR, NL focus",
+                "Bundeling producten: Home, car, pet, life"
+            ],
+            kansen: [
+                { domein: "Human-in-the-loop governance: Key controls voor >50% claim-autonomie", urgentie: "HOOG" },
+                { domein: "IT-risk & cloud/vendor risk", urgentie: "HOOG" },
+                { domein: "Privacy compliance (na datalek)", urgentie: "HOOG" },
+                { domein: "AI-governance en model risk: procesbeschrijvingen voor AI-processen", urgentie: "HOOG" },
+                { domein: "Cybersecurity audits & awareness", urgentie: "HOOG" }
+            ],
+            risicos: [
+                "Cybersecurity kwetsbaarheden: recent datalek toont risico's",
+                "Vendor risk: afhankelijkheid cloud en reinsurance partners",
+                "AI-bias en compliance: pricing algoritmes onder toezicht",
+                "Hoge CAT-exposure: klimaatgerelateerde schades"
+            ]
+        },
+        "Allianz Direct": {
+            logoUrl: "logos/allianz.gif",
+            tier: 0, type: "Digital", premie: "N/A", logo: "AD", contact: false,
+            actueel: [
+                "Digital-first strategie: 100% online distributie",
+                "AI-gedreven klantinteractie en schadeafhandeling",
+                "SparkLabs: innovatie-afdeling voor nieuwe proposities",
+                "GAIA AI-chatbot voor klantservice en claims",
+                "Cyberdiensten MKB: CyberScan, Cyberdekking en advies",
+                "Self-service portaal: hoge digitale acceptatiegraad"
+            ],
+            strategie: [
+                "Procesautomatisering: claims en underwriting",
+                "Innovatie via SparkLabs: nieuwe producten en diensten",
+                "Cyberdiensten MKB uitrollen",
+                "AI en automatisering focus op operationele efficiëntie"
+            ],
+            kansen: [
+                { domein: "AI/Data-analyse en risk scoring", urgentie: "HOOG" },
+                { domein: "Portalontwikkeling self-service", urgentie: "MEDIUM" },
+                { domein: "Cybersecurity MKB-advisering", urgentie: "HOOG" },
+                { domein: "Compliance: AVG, DORA, NIS2", urgentie: "HOOG" }
+            ],
+            risicos: [
+                "Operationeel risico: snelle IT-transformatie",
+                "Cyberdreiging: ketenafhankelijkheid",
+                "Regelgevingsdruk: AVG, DORA, NIS2",
+                "Technologierisico's: AI-implementatie complexiteit"
+            ]
+        },
+        "Assurant": {
+            logoUrl: "logos/Assurant.jpg",
+            tier: 0, type: "Lifestyle", premie: "N/A", logo: "ASU", contact: false,
+            actueel: [
+                "Odido partnership: AppleCare Services geïntegreerd",
+                "APEX platform: ~90% digitale claimsafhandeling",
+                "Groepsprestaties 2025: groei in Global Lifestyle en digitale claims",
+                "Vehicle Care Technology Plus: automotive-integratie",
+                "Multi-country branches: regulatoire dekking en compliance-uitdagingen"
+            ],
+            strategie: [
+                "Digitale claims: APEX platform uitbreiden, omnichannel self-service",
+                "Partner-enablement: telco/retail/auto API-integraties, SLA-monitoring",
+                "Automotive-integratie: Vehicle Care Technology Plus, dealer/OEM-koppelingen",
+                "Multi-jurisdictie compliance harmonisatie processtromen",
+                "Embedded insurance: integratie in partner koopprocessen"
+            ],
+            kansen: [
+                { domein: "Claims-digitalisering: end-to-end journeys, Apple/repair-netwerk integraties", urgentie: "HOOG" },
+                { domein: "Partner-integraties: API-koppelingen, SLA-monitoring, partner-analytics", urgentie: "HOOG" },
+                { domein: "Data & analytics: schaderatio/fraude, retentie/NPS, device lifecycle, pricing", urgentie: "MEDIUM" },
+                { domein: "Regulatory reporting: SFCR/QRT-automation, multi-country compliance", urgentie: "MEDIUM" },
+                { domein: "Automotive service-design: EU-lokalisatie Vehicle Care, dealer-integraties", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "Operationele risico's: device-verzekeringen (frequentie, diefstal)",
+                "Multi-jurisdictie governance: vendor-management, AVG, DORA",
+                "Kapitaalmonitoring: SFCR ratio's",
+                "Cybersecurity en AI-risk"
+            ]
+        },
+
+        // TIER 1 - TOP TARGETS
+        "a.s.r. Nederland": {
+            logoUrl: "logos/asr.gif",
+            tier: 1, type: "All-lines", premie: "€6,5B", logo: "ASR", contact: true,
+            actueel: [
+                "✅ NIEUW: Jaarverslag 2025 gepubliceerd 25 maart 2026 (vandaag), incl. geüpdateerd klimaattransitieplan + natuur toegevoegd",
+                "✅ NIEUW: Jaarcijfers 2025: operationeel resultaat +11,9% naar €1.637 mln; Solvency II ratio 218% (2024: 198%)",
+                "✅ NIEUW: Integratie Aegon Nederland volledig afgerond eind 2025: alle grote systeemmigraties voltooid",
+                "✅ NIEUW: CEO Jos Baeten vertrekt 20 mei 2026; opvolger wordt Ingrid de Swart, nieuwe CEO, nieuw mandaat",
+                "✅ NIEUW: Overname Human TotalCare (arbodienstverlening & re-integratie) voltooid 2025",
+                "✅ NIEUW: Overname verzekeringstak Bovemij gepland: versterking agrarisch/transport segment",
+                "✅ NIEUW: Capital Markets Day aangekondigd: 1 december 2026 (nieuwe strategische kaders)",
+                "✅ NIEUW: Robert van der Schaaf benoemd als COO Non-life en lid Management Board (25 maart 2026)",
+                "✅ NIEUW: Organische kapitaalgeneratie gestegen naar €1.315 mln (+10,2%); dividend +9,3% naar €3,41/aandeel",
+                "✅ NIEUW: Duurzaam schadeherstel: 55% van woonhuis/inboedelschades gekozen voor reparatie (eerste meerderheid ooit)",
+                "Partieel Intern Model (PIM) voor ASR Levensverzekering goedgekeurd door DNB: +12%-punt op Solvency II ratio",
+                "Klimaattransitieplan: net-zero 2040 (beleggingen), 2050 (verzekeringen)"
+            ],
+            strategie: [
+                "POST-INTEGRATIE FASE: harmonisatie processen, systemen en data, Aegon-label verdwijnt definitief H1 2026",
+                "Juridische fusie a.s.r. Leven + Aegon Leven voltooien H1 2026",
+                "Kapitaalefficiëntie: Partieel Intern Model verder optimaliseren en valideren",
+                "Pensioen buy-outs: actieve groei in pensioen buy-out markt na Wtp-transitie",
+                "Groei arbodienstverlening: Human TotalCare integratie + re-integratieadvisering",
+                "Bovemij-integratie: agrarisch/transport portefeuille opnemen",
+                "Duurzaam schadeherstel naar gangbare praktijk in 2027 (doelstelling)",
+                "ESG-uitbreiding: CSRD-rapportage verdiepen, natuur toegevoegd aan klimaatplan",
+                "Capital Markets Day december 2026: nieuwe strategische kaders verwacht"
+            ],
+            kansen: [
+                { domein: "Post-integratie harmonisatie: data-reconciliatie, processtandaardisering, rapportage-unificatie Aegon/a.s.r. (12-24 maanden werk)", urgentie: "HOOG" },
+                { domein: "Juridische fusie leven-entiteiten: actuarieel, data en systeem-ondersteuning", urgentie: "HOOG" },
+                { domein: "CEO-wissel mei 2026 → Ingrid de Swart: strategisch moment voor ITDS om in beeld te komen bij nieuw leiderschap", urgentie: "HOOG" },
+                { domein: "Bovemij-integratie: domein- en IT-kennis voor agrarisch/transport portefeuille opname", urgentie: "HOOG" },
+                { domein: "Partieel Intern Model: validatie, back-testing, model risk governance, DNB-rapportage", urgentie: "HOOG" },
+                { domein: "DORA compliance & informatieregister: continuous compliance automation", urgentie: "HOOG" },
+                { domein: "Inkomen/arbeidsmarkt: actuarieel modelleren stijgend ziekteverzuim, IVA-beleidsimpact, productontwikkeling", urgentie: "HOOG" },
+                { domein: "EU AI Act governance: deadline augustus 2026, risk classificatie, model registers, compliance documentatie", urgentie: "HOOG" },
+                { domein: "Duurzaam schadeherstel: ketenoptimalisatie, leveranciersmonitoring, data-rapportage richting 2027-doelstelling", urgentie: "MEDIUM" },
+                { domein: "Capital Markets Day voorbereiding dec 2026: strategie-ondersteuning, datamodellering, investor narratief", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "Post-integratie complexiteit: harmonisatie na technische go-live is minstens even zwaar als de migratie zelf",
+                "CEO-transitie: strategische koerswijziging onder Ingrid de Swart onzeker",
+                "Aegon-merk verdwijnt H1 2026: klantretentie en adviseur-loyaliteit risico",
+                "Bovemij-integratie: nieuwe nichemarkt met eigen systemen en cultuur",
+                "Toezichtsdruk: DNB/AFM focus op post-merger governance en modelvalidatie",
+                "Stijgend ziekteverzuim + onzeker IVA-beleid: druk op inkomensportefeuille"
+            ],
+            gespreksopener: "De technische migraties met Aegon zijn afgerond, gefeliciteerd, dat is een enorme prestatie. Ervaring leert dat de harmonisatiefase daarna net zo arbeidsintensief is: data-reconciliatie, processtandaardisering, modelvalidatie. Wij hebben consultants die de a.s.r.-omgeving goed kennen. Waar liggen op dit moment de grootste knelpunten, en hoe kunnen wij daarbij helpen?"
+        },
+        "Achmea": {
+            logoUrl: "logos/achmea.jpg",
+            tier: 1, type: "All-lines", premie: "€27,5B", logo: "ACH", contact: true,
+            actueel: [
+                "✅ NIEUW: Jaarcijfers 2025: operationeel resultaat €938 mln (+7%); netto resultaat €1,2 mrd; premie €27,5B (+11%)",
+                "✅ NIEUW: Solvency II ratio 193% (2024: 182%); pro-forma +11%-punt door langlevenrisico-herverzekering (11 maart 2026)",
+                "✅ NIEUW: Strategische periode 2021-2025 succesvol afgesloten; alle targets ruimschoots behaald",
+                "✅ NIEUW: Nieuwe strategie 'Achmea Next Level' richting 2030 gelanceerd: 4 strategische keuzes + financiële targets",
+                "✅ NIEUW: Target 2030: operationeel resultaat €1 mrd; OFCG €750 mln; €20 mrd impactbeleggingen",
+                "✅ NIEUW: Lifetri-integratie en Sixth Street partnerschap in uitvoering: focus op pensioen buy-out markt",
+                "✅ NIEUW: Achmea Bank: DNB-goedkeuring voor A-IRB model in kapitaalberekeningen (19 feb 2026)",
+                "✅ NIEUW: Langlevenrisico herverzekerd (11 mrt 2026): helft langlevenrisico Achmea P&L herverzekererd",
+                "✅ NIEUW: Woekerpolissen: >90% klanteninstemming bereikt; overeenkomst definitief (2 mrt 2026)",
+                "✅ NIEUW: MSCI ESG-rating opgegradeerd van AA naar AAA (beste klasse); impactbeleggingen 12,2% (doel was 10%)",
+                "✅ NIEUW: Investor Update 14 april 2026: nadere toelichting strategie, plannen en financiële doelen verwacht",
+                "AchmeaGPT en Microsoft Copilot breed uitgerold; eGain AI Knowledge Hub: 21.000 users",
+                "InShared internationale expansie: Duitsland, Spanje, Roemenië"
+            ],
+            strategie: [
+                "PIJLER 1: Datagedreven en gepersonaliseerde distributie: klantbeleving naar hoger niveau via data & AI",
+                "PIJLER 2: Bedrijfsbreed AI-programma: AI als katalysator voor transformatie én groei; AchmeaGPT + Copilot",
+                "PIJLER 3: Internationale groei: direct/digitale schadeverzekeringen; NL marktleiderschap behouden",
+                "PIJLER 4: Pensioen & Leven versterken via Sixth Street partnerschap; pensioen buy-out markt groeien",
+                "Operationeel resultaat naar €1 mrd in 2030 (nu: €938 mln), verdere investering in groei en digitalisering",
+                "€20 mrd impactbeleggingen via Achmea Investment Management (eigen boek + klanten) richting 2030",
+                "Klimaatneutraal: bedrijfsvoering 2030, beleggingsportefeuille 2040, verzekeringsportefeuille 2050",
+                "Investor Update 14 april 2026: uitwerking van alle 2030-plannen"
+            ],
+            kansen: [
+                { domein: "AI-programma governance & EU AI Act (aug 2026): risk-classificatie, model registers, compliancedocumentatie, urgent want deadline nadert", urgentie: "HOOG" },
+                { domein: "Pensioen buy-out ondersteuning: actuarieel, data, systeemimplementatie rond Sixth Street partnerschap en Lifetri-integratie", urgentie: "HOOG" },
+                { domein: "Datagedreven distributie: data-engineering, analytics, personalisatie-architectuur op schaal", urgentie: "HOOG" },
+                { domein: "Continuous Compliance: DORA/AI Act embedden, van implementatie naar structureel beheer", urgentie: "HOOG" },
+                { domein: "A-IRB model validatie & model risk management Achmea Bank: DNB-goedkeuring verkregen, nu doorlopend validatie- en back-testwerk", urgentie: "HOOG" },
+                { domein: "Langlevenrisico modellering: herverzekering afgerond, maar interne modellen moeten meebewegen", urgentie: "HOOG" },
+                { domein: "Ziekteverzuim/inkomen: stijgend verzuim (50.000 meldingen) vraagt om nieuwe actuariële modellen en preventie-proposities", urgentie: "HOOG" },
+                { domein: "FIDA (Open Banking verzekeringen): API governance, data privacy bij third-party sharing", urgentie: "HOOG" },
+                { domein: "Investor Update april 2026 → nieuwe programma's: ITDS moet vóór die datum in gesprek zijn om mee te schrijven aan uitvoering", urgentie: "HOOG" },
+                { domein: "InShared internationaal: implementatie direct/digital, lokalisatie (DE/ES/RO)", urgentie: "MEDIUM" },
+                { domein: "Embedded insurance: API-integraties met partners", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "AI-bias en ethiek: responsible AI governance vereisten nemen toe (AI Act aug 2026)",
+                "Klimaatschade: stijgende natcat-claims drukken Non-life resultaat (in 2025 juist lage schade, maar structureel risico)",
+                "Cyber & ketenafhankelijkheid: cloud/vendor risico's verhoogd na Atos-partnership en AI-uitrol",
+                "Multi-brand complexiteit: Centraal Beheer, Interpolis, Zilveren Kruis, InShared, FBTO, OHRA: coördinatie over 6+ merken",
+                "Sixth Street partnerschap: afhankelijkheid externe partij voor pensioen buy-out strategie",
+                "Internationalisering: uitvoeringsrisico in DE/ES/RO markten"
+            ],
+            gespreksopener: "Jullie hebben een bedrijfsbreed AI-programma aangekondigd als hart van de Next Level strategie richting 2030, 236 use cases al in productie bij NN, vergelijkbare trajecten bij Achmea. De EU AI Act deadline van augustus 2026 nadert snel. Wij zien bij andere verzekeraars dat AI governance en risicoklassificatie de bottleneck wordt. Hoe is dat bij Achmea georganiseerd, en waar hebben jullie de meeste capaciteitsbehoefte?"
+        },
+        "NN Group": {
+            logoUrl: "logos/nn.jpg",
+            tier: 1, type: "All-lines", premie: "€8B+", logo: "NN", contact: false,
+            actueel: [
+                "✅ NIEUW: Jaarcijfers 2025: operationeel kapitaalgeneratie €2,1 mrd (+9%); Solvency II ratio 220%; operating result €3,0 mrd (+17%)",
+                "✅ NIEUW: Alle 2025-targets overtroffen; goed op weg naar 2028-doelen (Capital Markets Day mei 2025)",
+                "✅ NIEUW: 236 AI use cases in productie eind 2025 (H1 2025: 191; eind 2024: 148), waaronder auto-claims binnen minuten",
+                "✅ NIEUW: Future Ready programma on track: €200 mln efficiency per jaar target in 2027",
+                "✅ NIEUW: Bruto premies Nederland Niet-leven: +6% naar >€4 mrd (eerste keer boven €4 mrd); combined ratio 92,9%",
+                "✅ NIEUW: DC-pensioensvermogen AuM: +9% naar €43 mrd; sterke netto-instromen €2,6 mrd",
+                "✅ NIEUW: AZL: eerste pensioenfonds overgezet naar nieuw Wtp-platform; meer klanten volgen snel",
+                "✅ NIEUW: Jaarlijks aandeleninkoopprogramma verhoogd naar €350 mln; dividend +13% naar €3,88/aandeel",
+                "✅ NIEUW: CFO Annemiek van Melick herbenoemd; wijzigingen in samenstelling Raad van Commissarissen",
+                "✅ NIEUW: Investeringen in klimaatoplossingen gestegen naar €14 mrd totaal eind 2025",
+                "✅ NIEUW: Data literacy-programma voor medewerkers uitgebreid (fundament voor AI-schaling)",
+                "Woekerpolissen: >90% klanteninstemming bereikt; schikking definitief afgerond oktober 2025",
+                "CyberScan en Cyberdekking voor MKB gelanceerd; GAIA AI-chatbots in productie"
+            ],
+            strategie: [
+                "FUTURE READY (2025-2027): €200 mln jaarlijkse efficiency, procesautomatisering, AI-schaling, data literacy",
+                "AI-schaling: van 236 use cases (2025) naar 300 use cases (2028); 50% nieuwe omzet via digitale leads in 2028",
+                "AZL Wtp-transitie: Wtp-platform uitrol naar meerdere pensioenfondsen 2026-2027",
+                "Pensioen DC groei: €43 mrd AuM; hoge instroom uit Wtp-hervorming benutten",
+                "Internationale groei Insurance Europe: Polen, Griekenland, Roemenië, Slowakije",
+                "Japan: nieuw langetermijnspaarproduct succesvol gelanceerd; VNB +25%",
+                "Cyberverzekering MKB: CyberScan en Cyberdekking verdere uitrol",
+                "Capital return verhoogd: €350 mln buyback + progressief dividend (signaal financiële kracht)"
+            ],
+            kansen: [
+                { domein: "AI Act governance (aug 2026): 236 use cases in productie = grote compliance-opgave; risk-classificatie, model registers, documentatie, ITDS kan dit programmatisch aanpakken", urgentie: "HOOG" },
+                { domein: "Future Ready uitvoering: AI-use case uitrol, MLOps, model risk management, human-in-the-loop governance voor STP-claims", urgentie: "HOOG" },
+                { domein: "AZL Wtp-transitie: implementatieondersteuning per pensioenfonds-migratie, herhaalbaar en schaalbaar werk", urgentie: "HOOG" },
+                { domein: "Data literacy programma: training, change management, analytics-capaciteit voor medewerkers", urgentie: "HOOG" },
+                { domein: "DORA continuous compliance: van remediation naar structureel beheer en automatisering", urgentie: "HOOG" },
+                { domein: "GRC-tooling optimalisatie (Cerrix/ServiceNow): governance framework inrichten rondom groeiende AI-portefeuille", urgentie: "HOOG" },
+                { domein: "Cyberverzekering MKB advisory: risicobeoordelingen, preventie-scans, incident response, aansluitend op CyberScan propositie", urgentie: "HOOG" },
+                { domein: "DC-pensioen operaties: administratie, data-management, communicatie bij groei naar €43+ mrd AuM", urgentie: "MEDIUM" },
+                { domein: "RPA & procesautomatisering: opschaling efficiency in schade en klantenservice", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "AI governance kloof: 236 use cases in productie maar EU AI Act compliance nog niet volledig ingericht",
+                "Geopolitieke volatiliteit: CEO Knibbe noemt dit expliciet; impact op beleggingen en internationale operations",
+                "Japan underperformance: enige divisie die target niet haalde in 2025",
+                "Woekerpolisstaart: reputatierisico aanwezig ondanks schikking",
+                "Talent competitie: strijd om data/AI talent in krappe markt",
+                "Legacy IT: Delta Lloyd systemen fragmentatie"
+            ],
+            gespreksopener: "Jullie Future Ready programma is erg concreet, 236 use cases in productie is indrukwekkend, en €200 mln efficiency in 2027 is een ambitieus maar haalbaar doel. De volgende uitdaging is model risk management en EU AI Act compliance op die schaal: elke use case moet geclassificeerd, gedocumenteerd en beheerd worden vóór augustus 2026. Hoe borgen jullie dat programmatisch, en is daar externe expertise bij betrokken?"
+        },
+        "Aegon NL": {
+            logoUrl: "logos/aegon-bank.gif",
+            tier: 1, type: "Life/Pensions", premie: "€4B+", logo: "AEG", contact: false,
+            actueel: [
+                "Volledig geïntegreerd in a.s.r. sinds januari 2024",
+                "Pre-acquisitie: €4+ miljard premie, 2500+ FTE",
+                "Juli 2023: €4,9 miljard acquisitie door a.s.r. aangekondigd",
+                "Q2 2025: Integration steering committee, 15+ workstreams",
+                "H1 2026: Target go-live systeemconsolidatie (at risk)",
+                "Merknaam Aegon verdwijnt gefaseerd (2024-2026)"
+            ],
+            strategie: [
+                "Volledige integratie in a.s.r. afronden",
+                "Synergierealisatie: €185 mln kostenbesparing",
+                "Merkuitfasering: Aegon → a.s.r. branding voltooien",
+                "Klantretentie: churn minimaliseren tijdens transitie",
+                "Pensioenportefeuilles: optimale integratie"
+            ],
+            kansen: [
+                { domein: "Migratie projecten: data en systemen", urgentie: "HOOG" },
+                { domein: "Change management merktransitie", urgentie: "MEDIUM" },
+                { domein: "Closed book polisadministratie", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "Klantverloop tijdens merktransitie",
+                "Complexe IT-integratie",
+                "Cultuurverschillen a.s.r. vs Aegon",
+                "H1 2026 deadline at risk"
+            ]
+        },
+        "CZ Groep": {
+            logoUrl: "logos/cz.gif",
+            tier: 1, type: "Zorg", premie: "3,8M vez", logo: "CZ", contact: false,
+            actueel: [
+                "~3,8 miljoen verzekerden; merken: CZ, Just, NN Zorg, OHRA Zorg",
+                "Strategie 'CZ 2030' gelanceerd (opvolger CZ 2025)",
+                "Krimp verzekerdenbestand: -150.000 in 2025 (22% → ~21% marktaandeel)",
+                "Premie 2025 'aan hoge kant': bewuste keuze, geen reserves ingezet",
+                "Flink geïnvesteerd in AI (2024): topic modelling, neural networks",
+                "Zorgtransformatie: Elizabeth-TweeSteden Tilburg, Zuid-Limburg",
+                "NZa verscherpt toezicht 2025"
+            ],
+            strategie: [
+                "CZ 2030 strategie: data-gedreven bedrijf",
+                "AI & data: verder investeren in AI-gedreven processen",
+                "Zorgtransformatie: regionale digitaliseringsaanpak",
+                "Digitale service: apps uitbreiden (Coach, Dokter, Fysio)",
+                "CSRD rapportage: duurzaamheidsrapportage vanaf 2025/2026"
+            ],
+            kansen: [
+                { domein: "AI scaling: NLP, chatbots", urgentie: "HOOG" },
+                { domein: "Data governance privacy preserving", urgentie: "HOOG" },
+                { domein: "Zorgtransformatie PMO", urgentie: "MEDIUM" },
+                { domein: "CSRD implementatie", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "Marktaandeel verlies: -150.000 verzekerden",
+                "Zorgkosten: +38% verwacht 2024-2029",
+                "NZa verscherpt toezicht 2025",
+                "Concurrentie: Zilveren Kruis en VGZ domineren"
+            ]
+        },
+
+        // TIER 2 - HEALTHCARE
+        "VGZ": {
+            logoUrl: "logos/vgz.gif",
+            tier: 2, type: "Zorg", premie: "4M vez", logo: "VGZ", contact: true,
+            actueel: [
+                "ONVZ strategisch partnerschap (oktober 2025): risicodragerschap vanaf 2027",
+                "ONVZ behoudt merk en dienstverlening na partnerschap",
+                "Samenwerking Koninklijke Jaarbeurs: Dutch Health Hub voor innovatie",
+                "eHealth-oplossingen: VR-therapie, thuismonitoring, beeldbellen",
+                "Focus op innovatie, digitalisering en verduurzaming in de zorg",
+                "4 miljoen verzekerden via merken: VGZ, Univé, IZZ, Zekur, VGZbewuzt",
+                "Totaal resultaat 2024: €250 mln (beleggingsrendement €229 mln)",
+                "'Technologie, tenzij' principe: digitale zorg is NORM",
+                "VieCuri transformatie: €11 mln investering, 15 projecten",
+                "Premie 2026: €154,25/maand (-2% vs 2025)"
+            ],
+            strategie: [
+                "ONVZ integratie: schaalvergroting, system- en datamigratie naar 2027",
+                "Digitalisering zorgtrajecten via eHealth, beeldbellen, VR en monitoring",
+                "Databricks-architectuur voor analytics pipelines en data-intelligence",
+                "Agile-operaties: PDCA, Lean, gilden, productteams",
+                "'70% Hybrid 2026' target: hybride zorgpaden",
+                "Versterken datavolwassenheid: van platformen tot analytics",
+                "Risico & compliance: implementatie AVG, beveiligingsbouwstenen"
+            ],
+            kansen: [
+                { domein: "ONVZ integratie systeemmigratie", urgentie: "HOOG" },
+                { domein: "Data-intelligence Databricks pipelines", urgentie: "HOOG" },
+                { domein: "Cloud & platform: Azure migratie, DevOps", urgentie: "HOOG" },
+                { domein: "Agile transformatie coaching scrumteams", urgentie: "MEDIUM" },
+                { domein: "IT-risico & compliance: AVG, cyber/privacy audits", urgentie: "HOOG" },
+                { domein: "Ecosysteem-integratie: APIs met eHealth-leveranciers", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "Integratierisico ONVZ: complexe IT- en data-integratie",
+                "Data security & compliance: multi-brand en multi-cloud complexiteit",
+                "Governance overhead: balanceren PDCA-werkwijze en regeldruk",
+                "Organisatiecultuur: agile maturity verschilt per team",
+                "ACM goedkeuring concentratie in behandeling"
+            ]
+        },
+        "Menzis": {
+            logoUrl: "logos/menzis.jpg",
+            tier: 2, type: "Zorg", premie: "Oost-NL", logo: "MEN", contact: false,
+            actueel: [
+                "Coöperatieve structuur: klantgericht zonder winstoogmerk",
+                "Sterke positie in Oost-Nederland (Overijssel, Gelderland, Drenthe)",
+                "'70% Hybrid 2026' ambitie: ambitieuze hybride zorg doelstelling",
+                "Budget-merk Anderzorg voor prijsbewuste klanten",
+                "Premies 2025 niet kostendekkend: €68 mln voorziening",
+                "Data-gedreven zorginkoop: analytics voor contractering"
+            ],
+            strategie: [
+                "Hybride zorg realisatie: 70% van zorgpaden hybride",
+                "Digitale transformatie: self-service, online diensten",
+                "Zorginkoop innovatie: data-gedreven contractering",
+                "Preventie focus: gezondheidsbevordering programma's",
+                "Regionale partnerships: samenwerking zorgaanbieders"
+            ],
+            kansen: [
+                { domein: "Hybride zorg implementatie PMO", urgentie: "HOOG" },
+                { domein: "Zorgaanbieders B2B digitalisering", urgentie: "HOOG" },
+                { domein: "Data analytics zorginkoop", urgentie: "MEDIUM" },
+                { domein: "DORA compliance", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "Regionale concentratie: Oost-NL afhankelijkheid",
+                "70% hybrid target: provider adoptie uitdaging",
+                "Coöperatieve structuur: langzamere besluitvorming",
+                "Zorgkosten stijging druk op betaalbaarheid"
+            ]
+        },
+        "Brand New Day": {
+            logoUrl: "logos/brandnewday.jpg",
+            tier: 2, type: "Pensioen", premie: "€8,5B AuM", logo: "BND", contact: false,
+            actueel: [
+                "Snelgroeiende pensioen-innovator: volledig online platform",
+                "Aantal rekeningen: 369.000 (+23%, +86.000 nieuw)",
+                "Klantvermogen: €8,5 miljard (+31%)",
+                "Stortingen: €2,2 miljard (+38%)",
+                "Nettowinst: €19 miljoen (-5%)",
+                "Disruptieve pricing: laagste kosten in de markt",
+                "Demografische shift: meer jongeren en vrouwen"
+            ],
+            strategie: [
+                "Wtp implementatie: volledige transitie nieuw pensioenstelsel",
+                "Marktaandeel groei: meer werkgevers en zzp'ers",
+                "Platform uitbreiding: nieuwe functionaliteiten",
+                "Schaalvergroting: operationele groei managen"
+            ],
+            kansen: [
+                { domein: "Wtp implementatie actuariaat", urgentie: "HOOG" },
+                { domein: "Platform development DevOps", urgentie: "HOOG" },
+                { domein: "DNB compliance pensioentoezicht", urgentie: "HOOG" },
+                { domein: "Growth operations schaalvergroting", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "Schaalgroei uitdaging: operationele complexiteit",
+                "Wtp implementatie risico's",
+                "Concurrentie: grote pensioenverzekeraars reageren",
+                "Technology risk: platform beschikbaarheid kritiek"
+            ]
+        },
+        "De Goudse": {
+            logoUrl: "logos/degoudse.gif",
+            tier: 2, type: "Schade", premie: "€913M", logo: "GOU", contact: false,
+            actueel: [
+                "Nova chatbot live: 24/7 beschikbaar met zelflerend karakter voor productvragen",
+                "Mijn Goudse klantportaal uitgerold voor collectieve inkomensverzekering",
+                "RPA Center of Excellence opgezet: governance en standaarden voor procesautomatisering",
+                "Sazas overname per 1 januari 2026: uitbreiding verzuimmarkt",
+                "Nieuw cyberproduct in ontwikkeling ter vervanging huidig product",
+                "Schadeketenversterkingvia Clarixy en Midglas: nichepositie uitbreiden",
+                "Nettowinst €271,5 mln (grotendeels eenmalige verkoopopbrengst)",
+                "Solvabiliteit: 261% - zeer sterk"
+            ],
+            strategie: [
+                "Digital-first dienstverlening: 24/7 digitale assistentie + portalen",
+                "Operational excellence via structurele RPA-automatisering",
+                "Product- en propositie-vernieuwing op cyber",
+                "Ketenregie in schade versterken via Clarixy en Midglas",
+                "Opschaling in verzuimmarkt via Sazas-acquisitie",
+                "MKB-focus: marktaandeel verdubbelen ambitie"
+            ],
+            kansen: [
+                { domein: "GRC-tooling optimalisatie: First Line Defense enablement voor risk-vastlegging", urgentie: "HOOG" },
+                { domein: "Conversational AI en chatbot ontwikkeling", urgentie: "HOOG" },
+                { domein: "RPA/procesautomatisering CoE: governance frameworks tegen wildgroei", urgentie: "HOOG" },
+                { domein: "Klantportalen en gebruikersbeheer (IAM)", urgentie: "HOOG" },
+                { domein: "Cyberproduct ontwikkeling en dienstverlening", urgentie: "HOOG" },
+                { domein: "Integratieprojecten M&A (Sazas, Midglas, Clarixy)", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "Adoptie- en kwaliteitsrisico chatbot: zelflerend vereist continue borging",
+                "Portaalbeveiliging en toegangsbeheer: IAM governance kritisch",
+                "RPA opschaling: governance nodig om wildgroei te voorkomen",
+                "Cyberproduct overgangsperiode: stopzetting oud + nieuw in ontwikkeling",
+                "Integratiecomplexiteit M&A: Midglas/Clarixy + Sazas trajecten"
+            ]
+        },
+        "DELA": {
+            logoUrl: "logos/dela.jpg",
+            tier: 2, type: "Uitvaart", premie: "5,58M leden", logo: "DEL", contact: false,
+            actueel: [
+                "Coöperatieve uitvaartverzekeraar: 5,58 miljoen leden",
+                "Groepsresultaat na belasting: €145 mln",
+                "Winstdeling aan leden: €281,2 mln (+13%)",
+                "Uitvaarten: 56.148 (+4,5%); crematies: 51.967 (+3,4%)",
+                "Operationeel resultaat uitvaartbedrijf: turnaround van -€16 mln naar +€2,5 mln",
+                "DECAVI award België: klanttevredenheid",
+                "Eerste CSRD-rapportage gepubliceerd"
+            ],
+            strategie: [
+                "Nieuw bedrijfsplan 2026-2030 in ontwikkeling",
+                "Wendbare organisatie: toekomstgerichte structuur",
+                "Innovatie: nieuwe diensten en producten",
+                "Duurzaamheid: ESG integratie",
+                "Internationale groei: België en Duitsland"
+            ],
+            kansen: [
+                { domein: "Digital transformation platform", urgentie: "MEDIUM" },
+                { domein: "Customer experience journey", urgentie: "MEDIUM" },
+                { domein: "CSRD/ESG duurzaamheid", urgentie: "MEDIUM" },
+                { domein: "Internationaal België/Duitsland", urgentie: "LOW" }
+            ],
+            risicos: [
+                "Hybride businessmodel complexiteit",
+                "Uitvaartmarkt verandert langzaam",
+                "Ledenpopulatie deels minder digitaal",
+                "Concurrentie: nieuwe online toetreders"
+            ]
+        },
+
+        // TIER 3 - MID-SIZE DIRECT
+        "FBTO": {
+            logoUrl: "logos/fbto.jpg",
+            tier: 3, type: "Direct", premie: "Achmea", logo: "FBT", contact: false, actueel: ["Online-first verzekeraar van Achmea", "Onderdeel Achmea AI-programma", "Prijs-competitief: prijsbewuste klanten"],
+            strategie: ["Digitale excellence", "AI-gedreven service", "Cross-sell optimalisatie"],
+            kansen: [{ domein: "Digital experience UX", urgentie: "MEDIUM" }, { domein: "AI implementatie", urgentie: "MEDIUM" }],
+            risicos: ["Kannibalisatie andere Achmea merken", "Prijsdruk"]
+        },
+        "OHRA": {
+            logoUrl: "logos/ohra.jpg",
+            tier: 3, type: "Direct", premie: "Achmea", logo: "OHR", contact: false, actueel: ["Onderdeel Achmea merkenfamilie", "Focus op zorg en inkomen"],
+            strategie: ["Zorg focus: aanvullende verzekeringen", "Digitalisering klantprocessen"],
+            kansen: [{ domein: "Zorg digitalisering", urgentie: "MEDIUM" }],
+            risicos: ["Merk positionering naast Achmea"]
+        },
+        "Ditzo": {
+            logoUrl: "logos/ditzo.jpg",
+            tier: 3, type: "Direct", premie: "a.s.r.", logo: "DIT", contact: false, actueel: ["Online verzekeraar van a.s.r.", "Budget-label, volledig digitaal"],
+            strategie: ["Online groei", "a.s.r. synergie"],
+            kansen: [{ domein: "Digital automation", urgentie: "MEDIUM" }],
+            risicos: ["Prijsconcurrentie", "Marges onder druk"]
+        },
+        "InShared": {
+            logoUrl: "logos/inshared.jpg",
+            tier: 3, type: "Direct", premie: "Achmea", logo: "INS", contact: false, actueel: ["Internationale expansie: DE, ES, RO", "AI-gedreven, hoge automatisering", "Achmea incubator voor digitale verzekeringen"],
+            strategie: ["Internationale schaalvergroting", "AI verfijning", "Multi-country operations"],
+            kansen: [{ domein: "International rollout compliance", urgentie: "HOOG" }, { domein: "AI development MLOps", urgentie: "MEDIUM" }],
+            risicos: ["Internationale complexiteit", "Lokale regelgeving per land"]
+        },
+        "Zelf": {
+            logoUrl: "logos/zelf.jpg",
+            tier: 3, type: "Direct", premie: "NN", logo: "ZLF", contact: false,
+            actueel: ["NN Group's directe label", "Online autoverzekeringen"],
+            strategie: ["Digitale groei", "NN synergie"],
+            kansen: [{ domein: "Digital transformation", urgentie: "LOW" }],
+            risicos: ["Concurrentie directe autoverzekeraars"]
+        },
+        "ASR Basis": {
+            logoUrl: "logos/asr.gif",
+            tier: 3, type: "Direct", premie: "a.s.r.", logo: "ASB", contact: false,
+            actueel: ["Budget label van a.s.r.", "Prijs-gericht"],
+            strategie: ["Lean operations", "a.s.r. synergie"],
+            kansen: [{ domein: "Process optimization", urgentie: "LOW" }],
+            risicos: ["Prijsconcurrentie"]
+        },
+        "ASR Schade": {
+            logoUrl: "logos/asr.gif",
+            tier: 3, type: "Schade", premie: "a.s.r.", logo: "ASS", contact: true, actueel: ["Kern schade-entiteit a.s.r.", "Aegon schadeportefeuilles integratie", "DORA compliance lopend"],
+            strategie: ["Integratie voltooien", "Efficiency gecombineerde operaties", "Digitalisering schadeproces"],
+            kansen: [{ domein: "Aegon integratie", urgentie: "HOOG" }, { domein: "Claims digitalization", urgentie: "MEDIUM" }, { domein: "DORA compliance", urgentie: "HOOG" }],
+            risicos: ["Integratie risico's", "Klimaatschade stijging"]
+        },
+
+        // TIER 4 - NICHE
+        "Reaal": {
+            logoUrl: "logos/reaal.gif",
+            tier: 4, type: "Closed book", premie: "Achmea", logo: "REA", contact: false,
+            actueel: ["Closed book portefeuille", "Achmea beheer"],
+            strategie: ["Run-off management", "Kostenreductie"],
+            kansen: [{ domein: "Closed book optimization", urgentie: "LOW" }],
+            risicos: ["Legacy systemen"]
+        },
+        "NN Insurance": {
+            logoUrl: "logos/nn.jpg",
+            tier: 4, type: "Bancassurance", premie: "NN", logo: "NNI", contact: false, actueel: ["Bancassurance partnerships", "Distributie via bankkanaal"],
+            strategie: ["Bancassurance groei", "Digital integration"],
+            kansen: [{ domein: "Bank-verzekeraar integratie", urgentie: "LOW" }],
+            risicos: ["Partnership afhankelijkheid"]
+        },
+        "ANWB": {
+            logoUrl: "logos/anwb.jpg",
+            tier: 4, type: "Mobility", premie: "€400M", logo: "ANW", contact: false, actueel: ["5+ miljoen ANWB leden", "Mobility-gerelateerde verzekeringen", "#1 digitale klantreis (AMWeb)", "EV-focus en telematics"],
+            strategie: ["Leden conversie", "Mobility proposities", "Duurzame mobiliteit EV"],
+            kansen: [{ domein: "Digital transformation", urgentie: "MEDIUM" }, { domein: "Telematics/UBI producten", urgentie: "MEDIUM" }],
+            risicos: ["Partner afhankelijkheid", "Mobiliteit transitie"]
+        },
+        "Univé": {
+            logoUrl: "logos/unive-1.jpg",
+            tier: 4, type: "Coöperatief", premie: "€779M", logo: "UNI", contact: false, actueel: ["1,8 miljoen leden, 92 winkels", "Nettowinst €21 mln (+133%)", "Beste jaar ooit", "Beheerskostenratio 18%"],
+            strategie: ["Persoonlijk én digitaal", "Drie strategische doelen", "Efficiëntere werkprocessen"],
+            kansen: [{ domein: "Performance analytics", urgentie: "MEDIUM" }, { domein: "Digital transformation", urgentie: "MEDIUM" }, { domein: "DORA compliance", urgentie: "HOOG" }],
+            risicos: ["Schaalgrootte vs grote spelers", "VGZ afhankelijkheid zorg"]
+        },
+        "TVM": {
+            logoUrl: "logos/tvm.jpg",
+            tier: 4, type: "Transport", premie: "€300M", logo: "TVM", contact: true,
+            actueel: [
+                "Cybersecurity Onderzoek 2025 gepubliceerd: sector-inzichten transport",
+                "Cyber full-service propositie: verzekering + preventie + 24/7 incidenthulp",
+                "Transport & logistiek marktleider met focus op digitale weerbaarheid",
+                "AI en data-toepassingen binnen preventie en risicobeheersing",
+                "1000 FTE, 500K leden",
+                "Zero-emissie dekkingen gelanceerd",
+                "Polisvoorwaarden 2025 herschreven"
+            ],
+            strategie: [
+                "Vergroten digitale weerbaarheid van leden via preventie en tooling",
+                "Doorontwikkeling digitale portalen en self-service",
+                "Gebruik van data en AI-inzichten voor preventie in transportketens",
+                "Cybersecurity positioneren als full-service i.p.v. alleen verzekering",
+                "Transport specialisatie verdiepen met focus op nieuwe risico's"
+            ],
+            kansen: [
+                { domein: "Cybersecurity: risk assessments, preventiescans, incident response", urgentie: "HOOG" },
+                { domein: "AI/data-analyse voor risicobeheersing en preventie-effectiviteit", urgentie: "HOOG" },
+                { domein: "Digitale platforms en workflow-automatisering", urgentie: "MEDIUM" },
+                { domein: "Compliance & data governance (AVG, privacy, datalekken)", urgentie: "HOOG" },
+                { domein: "DORA compliance transport sector", urgentie: "HOOG" }
+            ],
+            risicos: [
+                "Verschillen in digitale volwassenheid bij leden",
+                "Toenemende cyberdreiging in transportketens",
+                "Opschaling AI afhankelijk van datakwaliteit en governance",
+                "Sector concentratie transport: economische cycli",
+                "Energietransitie onzekerheid in transport"
+            ]
+        },
+        "Bovemij": {
+            logoUrl: "logos/bovemij.gif",
+            tier: 4, type: "Automotive", premie: "N/A", logo: "BOV", contact: true,
+            actueel: [
+                "CyberVeilig pakket met Eye Security voor MKB-automotive gelanceerd",
+                "Strategie 2024-2029: focus op verzekeringen, garanties, datadiensten (RDC)",
+                "RDC (Reparatie Data Center) cloud dataplatform vernieuwd",
+                "Legacy modernisering als strategische prioriteit",
+                "Automotive specialist: verzekeringen, garanties, data",
+                "Solvabiliteit onder intern niveau: herstelplan actief",
+                "Self-service platformen in ontwikkeling"
+            ],
+            strategie: [
+                "Duurzame groei binnen risicokaders; versterking merkunit",
+                "Modernisering IT-systemen en vervanging legacy",
+                "Kostenbesparing door procesoptimalisatie",
+                "Cybersecurity uitrollen voor MKB-automotive segment",
+                "Investering medewerkers en klantgerichte innovatie (verzuim, garagepolis, Autotrust)"
+            ],
+            kansen: [
+                { domein: "Cybersecurity: CyberVeilig implementatie, audits, awareness", urgentie: "HOOG" },
+                { domein: "Data & compliance: RDC-projecten, AVG, DORA", urgentie: "HOOG" },
+                { domein: "Legacy-modernisering: migratieprojecten", urgentie: "HOOG" },
+                { domein: "Self-service platformen: klantportalen, procesautomatisering", urgentie: "MEDIUM" },
+                { domein: "IT-risk en vendor management", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "Hoge schadelast door looninflatie en herstelkosten",
+                "Toezicht & compliance: strengere kaders DNB/AFM",
+                "Cyberrisico's door digitalisering automotive sector",
+                "IT-systeemveroudering en migratierisico's",
+                "Solvabiliteit herstelplan uitvoering"
+            ]
+        },
+        "Klaverblad": {
+            logoUrl: "logos/klaverblad.jpg",
+            tier: 4, type: "Schade", premie: "€250M", logo: "KLV", contact: false,
+            actueel: [
+                "175 jaar bestaan in 2025",
+                "IT en transformatie expliciet belegd op operationeel directieniveau",
+                "Nieuw integratieteam Azure in opzet",
+                "Keylane Axon implementatie voor core insurance platform",
+                "Nettoverlies €8 mln (verbetering vs €25 mln verlies eerder)",
+                "Combined ratio schade: 95% (was 114% - significante verbetering)",
+                "Uitbreiding via volmachten als groei-instrument",
+                "Samenwerking in schadeafhandeling ter ondersteuning operatie"
+            ],
+            strategie: [
+                "IT-modernisering via Keylane Axon platform en Azure integratie",
+                "Toekomstbestendig maken operatie met sterke focus op IT en digitalisering",
+                "Groei en efficiëntie focus 2025 met volmachten als instrument",
+                "Organisatie beheerst laten meegroeien met distributie-uitbreiding",
+                "Versterking operationele slagkracht via ketensamenwerking",
+                "DORA compliance voorbereidingen"
+            ],
+            kansen: [
+                { domein: "Keylane Axon implementatie core platform", urgentie: "HOOG" },
+                { domein: "Integratie & IT-landschap (Azure)", urgentie: "HOOG" },
+                { domein: "DORA compliance voorbereidingen", urgentie: "HOOG" },
+                { domein: "Data-engineering en IT-risk", urgentie: "HOOG" },
+                { domein: "Digitale platformondersteuning", urgentie: "MEDIUM" },
+                { domein: "Operationele ondersteuning & transformatie", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "IT-transitie risico: Keylane implementatie + Azure integratie gelijktijdig",
+                "Sterke afhankelijkheid van IT bij verdere transformatie operatie",
+                "Behoefte aan beheersing en tempo bij groei via volmachten",
+                "Complexiteit door gelijktijdige operatie, groei en digitalisering",
+                "Schaalgrootte beperkt vs grote spelers"
+            ]
+        },
+        "ABN AMRO Verzekeringen": {
+            logoUrl: "logos/abnamro.jpg",
+            tier: 4, type: "Bancassurance", premie: "N/A", logo: "ABN", contact: false,
+            actueel: [
+                "24/7 digitale schade-afhandeling online met self-service",
+                "Self-service dashboards met status-tracking",
+                "Preventieve kennisdeling: artikelen over risico's",
+                "Breed non-life portfolio via één platform"
+            ],
+            strategie: [
+                "Klantgerichte digitale dienstverlening",
+                "Online dashboards, self-service en schade-meldfunctionaliteit",
+                "Schadebeheer met 24/7 procedures en status-tracking",
+                "Bank-verzekering integraties: single sign-on en identity governance"
+            ],
+            kansen: [
+                { domein: "Digitale klantportalen & UX", urgentie: "HOOG" },
+                { domein: "Schadeprocessen & automatisering", urgentie: "MEDIUM" },
+                { domein: "Data & analytics: claimdata, risicosegmentatie", urgentie: "MEDIUM" },
+                { domein: "Cyber & risicodienstverlening preventie", urgentie: "MEDIUM" },
+                { domein: "Bank-verzekering integraties: SSO, identity governance", urgentie: "HOOG" }
+            ],
+            risicos: [
+                "Operationeel én digitaal tegelijk: balanced skillsets vereist",
+                "Compliance & security: digitale schadeportalen AVG-compliance",
+                "Bank-verzekeraar integratie complexiteit"
+            ]
+        },
+        "Maas Lloyd": {
+            logoUrl: "logos/placeholder.jpg",
+            tier: 4, type: "Volmacht", premie: "€200M", logo: "MLL", contact: false,
+            actueel: [
+                "Volmacht-distributie via gevolmachtigde agenten voor MKB en particulieren",
+                "Loxxo partnership (november 2025): insurtech samenwerking schadeverhaal",
+                "Schadeverhaalservice gericht op ondernemers met intensief gebruikte wagenparken",
+                "FGD Assuradeuren volmacht verleend: uitbreiding volmachtcapaciteit",
+                "Run-off activiteiten als belangrijk onderdeel bedrijfsmodel",
+                "Productontwikkeling buiten traditionele volmachtketen via insurtech partnerships",
+                "Focus op gedifferentieerde volmacht-producten"
+            ],
+            strategie: [
+                "Volmachtstrategie versterken: kwaliteit en risicobeheer in keten",
+                "Commercieel portfolio uitbreiden via Loxxo en mogelijk andere insurtechs",
+                "Run-off en portfolio management als kernactiviteit",
+                "Digitalisering schade-afhandeling via tech-partnerships",
+                "Governance en compliance-verfijning onder DNB/AFM toezicht in volmachtmodel"
+            ],
+            kansen: [
+                { domein: "Run-off Factory: ITDS neemt tijdelijk beheer legacy portfolios over - managed services model", urgentie: "HOOG" },
+                { domein: "Volmachtketen-operatie: ketenprocessen, kwaliteitsborging, KPI-sturing", urgentie: "HOOG" },
+                { domein: "Partnership & insurtech integratie: Loxxo productontwerp, ketenworkflow", urgentie: "HOOG" },
+                { domein: "Portfolio- en risico-analyse: run-off monitoring, risicoaggregatie, pricing", urgentie: "HOOG" },
+                { domein: "Managed Services KYC/Risk: resultaatgericht proces overnemen vs uren schrijven", urgentie: "HOOG" },
+                { domein: "Claims-proces optimalisatie: triage, doorlooptijd, kostenbeheersing", urgentie: "MEDIUM" },
+                { domein: "Governance & compliance: DNB/AFM reporting, volmacht-oversight", urgentie: "HOOG" }
+            ],
+            risicos: [
+                "Volmachtketenkwaliteit: afhankelijk van agenten en ketenpartners",
+                "Technische pricing & underwriting-discipline over volmachtketen",
+                "Run-off complexiteit: legacy portefeuilles en prognoses",
+                "Toezicht en compliance-druk specifiek voor volmachtmodel",
+                "Innovatie-risico: balans tussen insurtech partnerships en risicobeheer"
+            ]
+        },
+
+        // TIER 5 - SPECIALTY
+        "LVM": {
+            logoUrl: "logos/lvm.jpg", tier: 5, type: "Agrarisch", premie: "Klein", logo: "LVM", contact: false,
+            actueel: ["Duitse verzekeraar met NL vestiging", "Agrarische focus"],
+            strategie: ["Niche versterking", "Group alignment"],
+            kansen: [{ domein: "Compliance lokaal", urgentie: "LOW" }],
+            risicos: ["Schaalgrootte", "Group afhankelijkheid"]
+        },
+        "DAS": {
+            logoUrl: "logos/das.jpg",
+            tier: 5, type: "Rechtsbijstand", premie: "€200M", logo: "DAS", contact: false,
+            actueel: [
+                "Staat onder toezicht DNB en AFM",
+                "Focus op digitale service-architectuur voor juridische workflows",
+                "Efficiënte procesondersteuning: intake, advies, conflictoplossing, declaraties",
+                "Procesintegratie juridische workflows met focus op outcome-kwaliteit"
+            ],
+            strategie: [
+                "Efficiënte procesondersteuning voor intake, advies en conflictoplossing",
+                "Digitale service-architectuur en procesintegratie",
+                "Optimalisatie juridische workflows en kwaliteit outcomes"
+            ],
+            kansen: [
+                { domein: "Digitale klant- & case-processen: case management", urgentie: "HOOG" },
+                { domein: "Compliance, privacy & legal risk controls: AVG/GDPR", urgentie: "HOOG" },
+                { domein: "Cyber & resilience: 24/7 portal beschikbaarheid", urgentie: "HOOG" },
+                { domein: "Third-party & outsourcing governance: advocaten, mediators", urgentie: "MEDIUM" },
+                { domein: "Digital evidence integriteit en documentflow", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "Datakwaliteit & integratie-complexiteit: meerdere systemen en partners",
+                "Cybersecurity & privacy: gevoelige klantdata en AVG-compliance",
+                "Procesrisico's bij digitale transformatie juridische workflows",
+                "Klantenervaring en reputatierisico: wachttijden en bereikbaarheid"
+            ]
+        },
+        "ONVZ": {
+            logoUrl: "logos/placeholder.jpg",
+            tier: 5, type: "Zorg", premie: "€600M", logo: "ONV", contact: false,
+            actueel: [
+                "VGZ strategisch partnerschap (oktober 2025): risicodragerschap VGZ vanaf 2027",
+                "ONVZ behoudt merk en dienstverlening na partnerschap",
+                "Managed Data Platform op Azure: uitrol dataplatform",
+                "AI-readiness voorbereiding: data-hygiëne en consolidatie",
+                "Agile transformatie: investering in moderne werkwijzen"
+            ],
+            strategie: [
+                "VGZ-integratie voorbereiden: datamigratie, complianceharmonisatie",
+                "Azure cloudmigratie en Managed Data Platform implementatie",
+                "AI-implementatie voorbereiding via datakwaliteit en MDM",
+                "Agile transitie: training, coaching, veranderingstrajecten",
+                "Behoud merk en klantenbestand binnen VGZ-groep"
+            ],
+            kansen: [
+                { domein: "Data & AI: Data governance, MDM, AI-readiness, modelbeheer", urgentie: "HOOG" },
+                { domein: "Cloud & security: Azure DevSecOps, hybrid cloud, AVG-compliance", urgentie: "HOOG" },
+                { domein: "Digitale klantprocessen: UX-optimalisatie, omnichannel journeys", urgentie: "MEDIUM" },
+                { domein: "Agile transitie: coaching, scaling frameworks, verandering", urgentie: "MEDIUM" },
+                { domein: "Integratie & APIs: Azure dataplatform, legacy koppelingen", urgentie: "HOOG" }
+            ],
+            risicos: [
+                "VGZ-integratie samenwerkingsrisico: compliance, datamigratie complexiteit",
+                "Cloud-security: ketenrisico door meerdere partijen en platforms",
+                "Data-kwaliteit: vertraagt AI-voetafdruk en advanced analytics",
+                "Change-weerstand: agile transitie culturele uitdagingen",
+                "Toezichthouder: AVG, NZa, DNB - audit-proof IT-landschap vereist"
+            ]
+        },
+        "Turien": {
+            logoUrl: "logos/Turien.jpg", tier: 5, type: "Volmacht", premie: "N/A", logo: "TUR", contact: false,
+            actueel: ["Volmacht specialist", "Intermediair gericht"],
+            strategie: ["Volmacht excellence", "Digital transformation"],
+            kansen: [{ domein: "Volmacht platforms", urgentie: "MEDIUM" }],
+            risicos: ["Intermediair afhankelijkheid"]
+        },
+        "NH1816": {
+            logoUrl: "logos/Nh1816.jpg", tier: 5, type: "Onderlinge", premie: "€570M+", logo: "NH", contact: false, actueel: ["200+ jaar historie", "Combined ratio 92,5%", "Levenportefeuille overgedragen aan Onderlinge 's-Gravenhage", "Recordgroei nieuw business"],
+            strategie: ["Particuliere schadeverzekeringen focus", "DORA readiness", "Klimaatrisico modellering"],
+            kansen: [{ domein: "DORA compliance", urgentie: "HOOG" }, { domein: "Data quality", urgentie: "MEDIUM" }, { domein: "Klimaatrisico modellering", urgentie: "MEDIUM" }],
+            risicos: ["Klimaatrisico brandverzekeringen", "Herverzekering kosten stijgen"]
+        },
+        
+        "Anderzorg": {
+            logoUrl: "logos/anderzorg.gif",
+            tier: 5, type: "Healthcare", premie: "€180M", logo: "AZ", contact: false,
+            actueel: ["2024: Niche zorgverzekeraar", "Focus op specifieke doelgroepen"],
+            strategie: ["Gespecialiseerde propositie", "Partnerschappen met zorgaanbieders"],
+            kansen: [{ domein: "Niche Healthcare IT", urgentie: "MEDIUM" }],
+            risicos: ["Zeer beperkte schaal", "Afhankelijk van partnerships"]
+        },
+        "Besured": {
+            logoUrl: "logos/besured.jpg",
+            tier: 5, type: "Digital", premie: "N/A", logo: "BSR", contact: false,
+            actueel: ["2024: Digital-only propositie", "Insurance-as-a-Service platform"],
+            strategie: ["B2B2C model", "White-label oplossingen", "API-first"],
+            kansen: [{ domein: "Platform Partnerships", urgentie: "MEDIUM" }],
+            risicos: ["Afhankelijk van partners", "Jonge speler"]
+        },
+        "Aevitae": {
+            logoUrl: "logos/aevitae.jpg",
+            tier: 5, type: "Specialty", premie: "€120M", logo: "AEV", contact: false,
+            actueel: ["2024: Uitvaart en leven", "Onderlinge waarborgmaatschappij"],
+            strategie: ["Focus op levensloopdiensten", "Uitvaartcombinaties"],
+            kansen: [{ domein: "Specialty Digitalisering", urgentie: "MEDIUM" }],
+            risicos: ["Niche markt", "Beperkte IT-capaciteit"]
+        },
+        "De Amersfoortse": {
+            logoUrl: "logos/amersfoortse.jpg",
+            tier: 4, type: "Schade", premie: "€500M", logo: "DAM", contact: false,
+            actueel: ["2024: Onderlinge waarborgmaatschappij", "Regionale focus", "Agrarisch segment sterk"],
+            strategie: ["Persoonlijke service", "Regionale verankering", "Agrarische expertise"],
+            kansen: [{ domein: "Agrarische IT", urgentie: "MEDIUM" }, { domein: "DORA Compliance", urgentie: "HOOG" }],
+            risicos: ["Beperkte schaalgrootte", "Niche segment afhankelijkheid"]
+        },
+        "Stad Holland": {
+            logoUrl: "logos/StadHolland.jpg",
+            tier: 5, type: "Healthcare", premie: "€250M", logo: "SH", contact: false,
+            actueel: ["2024: Regionale zorgverzekeraar", "Focus op Zuid-Holland"],
+            strategie: ["Regionale propositie", "Persoonlijke benadering"],
+            kansen: [{ domein: "Regionale Zorg Platform", urgentie: "MEDIUM" }],
+            risicos: ["Kleine schaal", "Beperkte middelen"]
+        },
+        "United Consumers": {
+            logoUrl: "logos/unitedconsumers.jpg",
+            tier: 5, type: "Healthcare", premie: "€400M", logo: "UC", contact: false,
+            actueel: ["2024: Onderdeel van CZ Groep", "Focus op collectiviteiten"],
+            strategie: ["Consumentencollectief model", "Transparante premies"],
+            kansen: [{ domein: "CZ IT Synergie", urgentie: "MEDIUM" }],
+            risicos: ["Afhankelijk van CZ", "Beperkte autonomie"]
+        },
+        "Promovendium": {
+            logoUrl: "logos/promovendium.jpg",
+            tier: 5, type: "Specialty", premie: "€50M", logo: "PRO", contact: false,
+            actueel: ["2024: Pensioen voor promovendi", "Niche specialty"],
+            strategie: ["Zeer specifieke doelgroep", "Pensioenexpertise"],
+            kansen: [{ domein: "Academic Pension IT", urgentie: "LOW" }],
+            risicos: ["Zeer niche", "Kleine schaal"]
+        },
+        "Bewuzt": {
+            logoUrl: "logos/bewuzt.jpg",
+            tier: 2, type: "Healthcare", premie: "€1,2B", logo: "BWZ", contact: false,
+            actueel: ["2024: Onderdeel van CZ", "United Consumers beweging", "800k verzekerden"],
+            strategie: ["Transparante zorg", "Collectief model", "CZ IT-platform"],
+            kansen: [{ domein: "Collectief Platform", urgentie: "MEDIUM" }, { domein: "DORA via CZ", urgentie: "MEDIUM" }],
+            risicos: ["Afhankelijk van CZ", "Beperkte eigen IT"]
+        },
+        "InTwente": {
+            logoUrl: "logos/intwente.jpg",
+            tier: 5, type: "Healthcare", premie: "€300M", logo: "IT", contact: false,
+            actueel: ["2024: Regionale verzekeraar Twente", "200k verzekerden"],
+            strategie: ["Sterke regionale verankering", "Persoonlijke service", "Onderlinge waarborgmaatschappij"],
+            kansen: [{ domein: "Regionale Digitalisering", urgentie: "MEDIUM" }],
+            risicos: ["Zeer kleine schaal", "Regionale afhankelijkheid"]
+        },
+        "Jaaah": {
+            logoUrl: "logos/jaaah.jpg",
+            tier: 5, type: "Specialty", premie: "€80M", logo: "JAH", contact: false,
+            actueel: ["2024: Begrafenisverzekeringen", "Moderne uitvaartverzekeraar"],
+            strategie: ["Online-first begrafenisdekking", "Transparante tarieven"],
+            kansen: [{ domein: "Digital Funeral Insurance", urgentie: "LOW" }],
+            risicos: ["Niche markt", "Kleine speler"]
+        },
+        "Just": {
+            logoUrl: "logos/just.jpg",
+            tier: 5, type: "Digital", premie: "N/A", logo: "JST", contact: false,
+            actueel: ["2024: On-demand verzekeringen", "Pay-per-use model"],
+            strategie: ["Flexibele dekking", "App-based verzekeren", "Micro-insurance"],
+            kansen: [{ domein: "On-Demand Platform", urgentie: "MEDIUM" }],
+            risicos: ["Nieuw business model", "Regulatoire uitdagingen"]
+        },
+        "ZEKUR": {
+            logoUrl: "logos/zekur.jpg",
+            tier: 5, type: "Digital", premie: "N/A", logo: "ZKR", contact: false,
+            actueel: ["2024: Online verzekeringsplatform", "Vergelijker en bemiddelaar"],
+            strategie: ["Digital intermediair", "Multi-carrier platform"],
+            kansen: [{ domein: "Platform Technologie", urgentie: "MEDIUM" }],
+            risicos: ["Concurrentie vergelijkers", "Afhankelijk van carriers"]
+        },
+        "National Academic": {
+            logoUrl: "logos/nationalacademic.jpg",
+            tier: 5, type: "Specialty", premie: "€150M", logo: "NAC", contact: false,
+            actueel: ["2024: Beroepsaansprakelijkheid academici", "Specialty lines"],
+            strategie: ["Professional indemnity", "Academic focus", "High-expertise underwriting"],
+            kansen: [{ domein: "Specialty Professional Lines IT", urgentie: "LOW" }],
+            risicos: ["Niche markt", "Beperkte schaal"]
+        },
+        "PNOzorg": {
+            logoUrl: "logos/pno.jpg",
+            tier: 5, type: "Healthcare", premie: "€90M", logo: "PNO", contact: false,
+            actueel: ["2024: Protestants-christelijke zorgverzekeraar", "Ledenorganisatie"],
+            strategie: ["Waarden-gedreven", "Christelijke identiteit", "Kleinschalig persoonlijk"],
+            kansen: [{ domein: "Niche Healthcare IT", urgentie: "LOW" }],
+            risicos: ["Zeer kleine schaal", "Beperkt IT-budget"]
+        },
+        "ProLife": {
+            logoUrl: "logos/prolife.jpg",
+            tier: 5, type: "Healthcare", premie: "€120M", logo: "PLF", contact: false,
+            actueel: ["2024: Christelijke zorgverzekeraar", "Protestantse achtergrond"],
+            strategie: ["Waarden-gedreven zorginkoop", "Kleinschalige operatie"],
+            kansen: [{ domein: "Faith-Based Healthcare IT", urgentie: "LOW" }],
+            risicos: ["Kleine schaal", "Niche positioning"]
+        },
+        "ZorgDirect": {
+            logoUrl: "logos/zorgdirect.jpg",
+            tier: 4, type: "Healthcare", premie: "€800M", logo: "ZD", contact: false,
+            actueel: ["2024: 500k verzekerden", "Budget zorgverzekeraar", "Online-first"],
+            strategie: ["Lage premies", "Eenvoudige propositie", "Digital kanalen"],
+            kansen: [{ domein: "Budget Healthcare Platform", urgentie: "MEDIUM" }, { domein: "DORA Compliance", urgentie: "HOOG" }],
+            risicos: ["Prijsconcurrentie", "Marges onder druk"]
+        },
+        "IZ": {
+            logoUrl: "logos/iza.jpg",
+            tier: 5, type: "Healthcare", premie: "€250M", logo: "IZ", contact: false,
+            actueel: ["2024: Regionale zorgverzekeraar", "150k verzekerden"],
+            strategie: ["Regionale focus", "Persoonlijke service"],
+            kansen: [{ domein: "Regional Healthcare IT", urgentie: "LOW" }],
+            risicos: ["Kleine schaal", "Beperkte middelen"]
+        },
+        "PMA": {
+            logoUrl: "logos/pma.jpg",
+            tier: 5, type: "Specialty", premie: "€60M", logo: "PMA", contact: false,
+            actueel: ["2024: Medische beroepsaansprakelijkheid", "Professional indemnity"],
+            strategie: ["Specialty medical malpractice", "High-expertise underwriting"],
+            kansen: [{ domein: "Medical Professional Lines IT", urgentie: "LOW" }],
+            risicos: ["Zeer niche", "Beperkte schaal"]
+        },
+        "VVAA": {
+            logoUrl: "logos/vvaa.jpg", tier: 5, type: "Beroepsgroep", premie: "€100M", logo: "VVA", contact: false, actueel: ["Specialist artsen en advocaten", "Beroepsrechtsbijstand expertise", "ONVZ/VGZ impact op zorgverzekeringen"],
+            strategie: ["Beroepsgroep verdieping", "VGZ/ONVZ transitie managen", "Digitale diensten"],
+            kansen: [{ domein: "Digital platform ledenportaal", urgentie: "MEDIUM" }, { domein: "VGZ transitie impact", urgentie: "HOOG" }],
+            risicos: ["Doelgroep beperking", "Concurrentie grote verzekeraars"]
+        },
+        "Allianz NL": {
+            logoUrl: "logos/allianz.gif",
+            tier: 5, type: "Commercial", premie: "€3B AuM", logo: "ALL", contact: false, actueel: ["Onderdeel Allianz SE", "Risk Barometer 2025: cybercrime #1", "€3B+ AuM", "Specialty lines: Marine, Property, Liability"],
+            strategie: ["DORA compliance group-wide", "Cyber proposities uitbreiden", "Klimaatrisico modellering", "Commercial digitalisering"],
+            kansen: [{ domein: "DORA NL/group afstemming", urgentie: "HOOG" }, { domein: "Cyber risk solutions", urgentie: "HOOG" }, { domein: "Klimaatrisico pricing", urgentie: "MEDIUM" }],
+            risicos: ["HQ Munich bepaalt strategie", "Cyber exposure", "Concurrentie corporate"]
+        },
+        "Generali NL": {
+            logoUrl: "logos/generali.jpg", tier: 5, type: "Commercial", premie: "N/A", logo: "GEN", contact: false, actueel: ["Onderdeel Generali Group", "Strategie 'Lifetime Partner 27'", "Commercial en Life & savings"],
+            strategie: ["Group strategie lokale implementatie", "Digitalisering portalen", "ESG producten"],
+            kansen: [{ domein: "Digital transformation", urgentie: "MEDIUM" }, { domein: "ESG integration", urgentie: "MEDIUM" }],
+            risicos: ["Group vs lokaal strategie", "Beperkte NL positie"]
+        },
+
+        // TIER 6 - INTERNATIONAL
+        "AIG Europe": {
+            logoUrl: "logos/aig.jpg",
+            tier: 6, type: "Corporate", premie: "€200M", logo: "AIG", contact: false, actueel: ["Grootste cyberteam EMEA, >20 jaar ervaring", "CyberEdge producten", "First Response binnen 1 uur", "15% EDR korting", "Limieten tot €10 mln"],
+            strategie: ["Corporate business grote ondernemingen", "Cyber growth", "Digital claims"],
+            kansen: [{ domein: "Cyber underwriting expertise", urgentie: "HOOG" }, { domein: "Prevention services", urgentie: "MEDIUM" }, { domein: "DORA branch compliance", urgentie: "HOOG" }],
+            risicos: ["US control", "Cyber accumulation risk", "Economic cyclicality"]
+        },
+        "Zurich NL": {
+            logoUrl: "logos/zurich.jpg", tier: 6, type: "Corporate", premie: "€400M", logo: "ZUR", contact: false, actueel: ["€400M premie, 500 FTE", "Swiss parent", "'Driving Excellence' strategie", "Risk engineering services"],
+            strategie: ["Commercial Insurance groei", "Net-zero investments 2050", "Risk engineering"],
+            kansen: [{ domein: "ESG/Sustainability", urgentie: "MEDIUM" }, { domein: "Risk engineering", urgentie: "MEDIUM" }, { domein: "DORA", urgentie: "HOOG" }],
+            risicos: ["Corporate market sensitivity", "Swiss HQ control"]
+        },
+        "AXA NL": {
+            logoUrl: "logos/axa.jpg",
+            tier: 6, type: "Corporate", premie: "€300M", logo: "AXA", contact: false, actueel: ["€300M premie, 400 FTE", "French parent Paris HQ", "Beperkte NL aanwezigheid"],
+            strategie: ["Niche focus", "Group alignment", "Efficiency"],
+            kansen: [{ domein: "DORA compliance", urgentie: "MEDIUM" }],
+            risicos: ["Paris HQ bepaalt strategie", "Beperkte schaal"]
+        },
+        "HDI Global": {
+            logoUrl: "logos/hdi.jpg", tier: 6, type: "Industrial", premie: "Klein", logo: "HDI", contact: false, actueel: ["Onderdeel Talanx", "Industrial/commercial focus", "Technical expertise"],
+            strategie: ["Industrial insurance core", "Technical underwriting"],
+            kansen: [{ domein: "Technical underwriting", urgentie: "LOW" }],
+            risicos: ["Industrial cycle sensitivity", "Kleine NL omvang"]
+        },
+        "UK P&I Club": {
+            logoUrl: "logos/ukpi.jpg",
+            tier: 6, type: "Maritime", premie: "N/A", logo: "UKP", contact: false,
+            actueel: [
+                "Marine mutual insurer: P&I coverage voor scheepseigenaren wereldwijd",
+                "Lid International Group of P&I Clubs: pooling wereldwijde liability",
+                "Cyberrisico's expliciet benoemd binnen maritieme risicoparadigma's",
+                "Sectorbrede guidance vessel cybersecurity en incident response"
+            ],
+            strategie: [
+                "Holistische risicobenadering: traditional maritime + evolving risks",
+                "Cyber, alternative fuels en lithium batteries als nieuwe risico's",
+                "International data governance: Europe, UK, USA compliance",
+                "Sanctions compliance monitoring en updates"
+            ],
+            kansen: [
+                { domein: "Data & analytics assurance: risk profiling, loss prevention", urgentie: "MEDIUM" },
+                { domein: "Cyber & resilience assurance: maritime assets", urgentie: "HOOG" },
+                { domein: "IT-Governance, risk & compliance (ITDS)", urgentie: "HOOG" },
+                { domein: "Third-party & cloud risk management", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "Cyber & supply chain: digitale afhankelijkheid platforms",
+                "Compliancecomplexiteit: internationale regelgeving, sancties, privacy",
+                "Data-integratie & kwaliteit: legacy, portals, externe data",
+                "Third-party exposure: IT- en cloudpartners monitoring"
+            ]
+        },
+        "TT Club": {
+            logoUrl: "logos/ttclub.jpg",
+            tier: 6, type: "Transport", premie: "N/A", logo: "TTC", contact: false,
+            actueel: [
+                "Transport & logistics mutual insurer",
+                "International Group member",
+                "Specialized maritime and cargo liability coverage"
+            ],
+            strategie: [
+                "Transport & logistics specialisatie verdiepen",
+                "International risk pooling",
+                "Digitale risicobeheertools voor leden"
+            ],
+            kansen: [
+                { domein: "Transport risk analytics", urgentie: "MEDIUM" },
+                { domein: "Cargo tracking & prevention", urgentie: "MEDIUM" },
+                { domein: "International compliance", urgentie: "MEDIUM" }
+            ],
+            risicos: [
+                "International regulatory complexity",
+                "Transport sector cyclicality",
+                "Cyber risks in logistics chains"
+            ]
+        },
+        
+        "Athora NL": {
+            logoUrl: "logos/Athora.jpg",
+            tier: 6, type: "Life/Pensions", premie: "N/A", logo: "ATH", contact: true, actueel: ["Voorheen VIVAT (Reaal, Zwitserleven)", "Private equity owned", "Operating Capital Generation: €522 mln", "Business volumes +32%", "Pension buy-outs: Yara, Koopvaardij, Pensura", "Strategie 'Horizon 2030'"],
+            strategie: ["Growth: pension buy-outs, Wtp-kansen", "Operating Model: AI, procesvereenvoudiging", "Investments: herpositionering hoger rendement"],
+            kansen: [
+                { domein: "Run-off Factory: VIVAT legacy systemen - tijdelijk beheer en migratie", urgentie: "HOOG" },
+                { domein: "Wtp-transitie buy-out support", urgentie: "HOOG" },
+                { domein: "DORA compliance", urgentie: "HOOG" },
+                { domein: "ALM expertise & kapitaaloptimalisatie", urgentie: "MEDIUM" },
+                { domein: "Process automation & modernisering", urgentie: "MEDIUM" }
+            ],
+            risicos: ["PE ownership hoge rendementsverwachtingen", "Beleggingsrisico herpositionering", "DNB scrutiny op PE-owned", "Legacy VIVAT systemen"]
+        }
+    };
+
+    // Render verzekeraars cards
+    function renderVerzekeraars() {
+        const tiers = {0: 'tier0', 1: 'tier1', 2: 'tier2', 3: 'tier3', 4: 'tier4', 5: 'tier5', 6: 'tier6'};
+        const tierColors = {0: 'purple', 1: 'red', 2: 'orange', 3: 'yellow', 4: 'green', 5: 'blue', 6: 'gray'};
+        
+        Object.keys(tiers).forEach(tier => {
+            const container = document.getElementById(tiers[tier]);
+            if (!container) return;
+            
+            Object.entries(verzekeraars).filter(([_, v]) => v.tier == tier).forEach(([name, v]) => {
+                const card = document.createElement('div');
+                card.className = 'verzekeraar-card bg-gray-900/50 rounded-xl p-4 border border-gray-800';
+                card.onclick = () => openModal(name);
+                
+                const logoHtml = v.logoUrl 
+                    ? `<img src="${v.logoUrl}" alt="${name}" class="w-10 h-10 rounded-lg object-contain bg-white p-1" onerror="this.outerHTML='<div class=\\'logo-placeholder\\'>${v.logo}</div>'">`
+                    : `<div class="logo-placeholder">${v.logoUrl ? 
+                `<img src="${v.logoUrl}" alt="${name}" style="width:100%;height:100%;object-fit:contain;background:white;padding:4px;border-radius:4px;">` : 
+                v.logo
+            }</div>`;
+                
+                card.innerHTML = `
+                    <div class="flex items-start gap-3 mb-2">
+                        ${logoHtml}
+                        <div class="flex-grow min-w-0">
+                            <h4 class="font-bold text-white truncate">${name} ${v.contact ? '⭐' : ''}</h4>
+                            <p class="text-sm text-${tierColors[tier]}-400">${v.premie}</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400">${v.type}</p>
+                `;
+                container.appendChild(card);
+            });
+        });
+    }
+
+
+        // Trend Modal Function
+        function openTrendModal(id) {
+            const trend = trendDetails[id];
+            const modal = document.getElementById('verzekeraarModal');
+            const modalContent = document.getElementById('modalContent');
+            
+            modalContent.innerHTML = `
+                <div class="max-h-[80vh] overflow-y-auto">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white mb-2">${trend.title}</h2>
+                            <div class="flex gap-3">
+                                <span class="px-3 py-1 rounded-full text-sm font-semibold 
+                                    ${trend.urgentie === 'HOOG' ? 'bg-red-500/20 text-red-400' : 
+                                      trend.urgentie === 'MEDIUM' ? 'bg-yellow-500/20 text-yellow-400' : 
+                                      'bg-blue-500/20 text-blue-400'}">
+                                    ${trend.urgentie}
+                                </span>
+                                <span class="px-3 py-1 rounded-full text-sm bg-gray-700 text-gray-300">
+                                    ${trend.timeline}
+                                </span>
+                            </div>
+                        </div>
+                        <button onclick="closeModal()" class="text-gray-400 hover:text-white text-4xl">&times;</button>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-orange-400 font-bold mb-2">🎯 Waarom is dit urgent?</h3>
+                            <p class="text-gray-300">${trend.waarom}</p>
+                        </div>
+                        
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-orange-400 font-bold mb-3">📊 Impact op Verzekeraars</h3>
+                            <ul class="space-y-2">
+                                ${trend.impact.map(item => `
+                                    <li class="text-gray-300 flex gap-2">
+                                        <span class="text-orange-500">•</span>
+                                        <span>${item}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-orange-400 font-bold mb-3">✅ Concrete Acties</h3>
+                            <ul class="space-y-2">
+                                ${trend.actie.map(item => `
+                                    <li class="text-gray-300 flex gap-2">
+                                        <span class="text-green-500">✓</span>
+                                        <span>${item}</span>
+                                    </li>
+                                `).join('')}
+                            </ul>
+                        </div>
+                        
+                        ${trend.voorbeelden ? `
+                            <div class="bg-gray-800 p-4 rounded-lg">
+                                <h3 class="text-orange-400 font-bold mb-3">💡 Voorbeelden uit de Praktijk</h3>
+                                <ul class="space-y-2">
+                                    ${trend.voorbeelden.map(item => `
+                                        <li class="text-gray-300 flex gap-2">
+                                            <span class="text-blue-500">→</span>
+                                            <span>${item}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        ` : ''}
+                        
+                        ${trend.verzekeraars ? `
+                            <div class="bg-gray-800 p-4 rounded-lg">
+                                <h3 class="text-orange-400 font-bold mb-2">🏢 Actieve Verzekeraars</h3>
+                                <div class="flex gap-2 flex-wrap">
+                                    ${trend.verzekeraars.map(v => `
+                                        <span class="px-3 py-1 bg-gray-700 text-gray-300 rounded-full text-sm">${v}</span>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        ` : ''}
+                        
+                        <div class="bg-orange-500/10 border-2 border-orange-500 p-4 rounded-lg">
+                            <h3 class="text-orange-400 font-bold mb-2">💰 Geschatte Investering</h3>
+                            <p class="text-white text-lg">${trend.budget}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+
+    // Modal functions
+    function openModal(name) {
+        const v = verzekeraars[name];
+        if (!v) return;
+        
+        const tierColors = {0: 'purple', 1: 'red', 2: 'orange', 3: 'yellow', 4: 'green', 5: 'blue', 6: 'gray'};
+        const tierNames = {0: 'Insurtech', 1: 'Top Target', 2: 'Healthcare', 3: 'Mid-Size', 4: 'Niche', 5: 'Specialty', 6: 'International'};
+        
+        document.getElementById('modalTitle').textContent = name + (v.contact ? ' ⭐' : '');
+        document.getElementById('modalSubtitle').innerHTML = `<span class="px-2 py-1 bg-${tierColors[v.tier]}-500/20 text-${tierColors[v.tier]}-400 rounded text-sm">Tier ${v.tier} - ${tierNames[v.tier]}</span> | ${v.type} | ${v.premie}`;
+        
+        const logoDiv = document.getElementById('modalLogo');
+        if (v.logoUrl) {
+            logoDiv.innerHTML = `<img src="${v.logoUrl}" alt="${name}" class="w-12 h-12 rounded-lg object-contain bg-white p-1" onerror="this.outerHTML='<div class=\\'logo-placeholder\\'>${v.logo}</div>'">`;
+        } else {
+            logoDiv.innerHTML = v.logo;
+            logoDiv.className = 'logo-placeholder';
+        }
+        
+        let content = '';
+        
+        // Actuele ontwikkelingen
+        if (v.actueel && v.actueel.length) {
+            content += `<div class="bg-gray-900/50 rounded-xl p-5 border border-gray-800">
+                <h3 class="text-lg font-bold text-orange-500 mb-3">📰 Actuele Ontwikkelingen</h3>
+                <ul class="space-y-2 text-gray-300">
+                    ${v.actueel.map(a => `<li class="flex items-start gap-2"><span class="text-orange-500 mt-1">•</span>${a}</li>`).join('')}
+                </ul>
+            </div>`;
+        }
+        
+        // Strategische focus
+        if (v.strategie && v.strategie.length) {
+            content += `<div class="bg-gray-900/50 rounded-xl p-5 border border-gray-800">
+                <h3 class="text-lg font-bold text-orange-500 mb-3">🎯 Strategische Focus (2026-2027)</h3>
+                <ul class="space-y-2 text-gray-300">
+                    ${v.strategie.map(s => `<li class="flex items-start gap-2"><span class="text-orange-500 mt-1">→</span>${s}</li>`).join('')}
+                </ul>
+            </div>`;
+        }
+        
+        // Kansen voor detachering
+        if (v.kansen && v.kansen.length) {
+            content += `<div class="bg-gray-900/50 rounded-xl p-5 border border-gray-800">
+                <h3 class="text-lg font-bold text-orange-500 mb-3">💼 Kansen voor Detachering</h3>
+                <div class="space-y-2">
+                    ${v.kansen.map(k => {
+                        const urgColor = k.urgentie === 'HOOG' ? 'red' : k.urgentie === 'MEDIUM' ? 'yellow' : 'green';
+                        return `<div class="flex justify-between items-center bg-black/30 rounded-lg p-3">
+                            <span class="text-gray-300">${k.domein}</span>
+                            <span class="px-2 py-1 rounded text-xs font-medium bg-${urgColor}-500/20 text-${urgColor}-400">${k.urgentie}</span>
+                        </div>`;
+                    }).join('')}
+                </div>
+            </div>`;
+        }
+        
+        // Risico's
+        if (v.risicos && v.risicos.length) {
+            content += `<div class="bg-gray-900/50 rounded-xl p-5 border border-red-500/30">
+                <h3 class="text-lg font-bold text-red-400 mb-3">⚠️ Risico's en Aandachtspunten</h3>
+                <ul class="space-y-2 text-gray-300">
+                    ${v.risicos.map(r => `<li class="flex items-start gap-2"><span class="text-red-400 mt-1">!</span>${r}</li>`).join('')}
+                </ul>
+            </div>`;
+        }
+
+        // Gespreksopener ITDS
+        if (v.gespreksopener) {
+            content += `<div class="bg-orange-500/10 rounded-xl p-5 border border-orange-500/50">
+                <h3 class="text-lg font-bold text-orange-400 mb-3">💬 ITDS Gespreksopener</h3>
+                <p class="text-gray-200 italic leading-relaxed">"${v.gespreksopener}"</p>
+            </div>`;
+        }
+        
+        document.getElementById('modalContent').innerHTML = content;
+        document.getElementById('verzekeraarModal').classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        document.getElementById('verzekeraarModal').classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    // Close modal on background click
+    document.getElementById('verzekeraarModal').addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
+    });
+
+    // Close modal on Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+    });
+
+    // Render Trends
+    function renderTrends() {
+        const container = document.getElementById('trendsContainer');
+        if (!container) return;
+        
+        container.innerHTML = Object.entries(trendDetails).map(([id, trend]) => `
+            <div class="bg-gray-800 rounded-xl p-6 border-2 border-gray-700 hover:border-orange-500 transition-all cursor-pointer" 
+                 onclick="openTrendModal(${id})">
+                <div class="flex items-start justify-between gap-6">
+                    <div class="flex items-start gap-4 flex-1">
+                        <div class="flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center text-white text-xl font-bold">
+                            ${id}
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white mb-2">${trend.title}</h3>
+                            <p class="text-gray-300 mb-3 leading-relaxed">${trend.waarom.substring(0, 150)}...</p>
+                            <div class="flex gap-3 flex-wrap">
+                                <span class="px-3 py-1 rounded-full text-sm font-semibold 
+                                    ${trend.urgentie === 'HOOG' ? 'bg-red-500/20 text-red-400' : 
+                                      trend.urgentie === 'MEDIUM' ? 'bg-yellow-500/20 text-yellow-400' : 
+                                      'bg-blue-500/20 text-blue-400'}">
+                                    ${trend.urgentie}
+                                </span>
+                                <span class="px-3 py-1 rounded-full text-sm bg-gray-700 text-gray-300">
+                                    ⏰ ${trend.timeline}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="flex-shrink-0 px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white rounded-lg font-semibold transition-colors text-sm">
+                        Info →
+                    </button>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // Initialize
+    renderVerzekeraars();
+    renderTrends();
+    </script>
+</body>
+</html>
